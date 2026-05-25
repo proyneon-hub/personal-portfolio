@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO and social sharing metadata. Update these when your links or role focus change. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Pramit Roy, a student developer seeking Fall 2026 co-op opportunities in Toronto and the GTA.">
+  <meta name="author" content="Pramit Roy">
+  <meta name="theme-color" content="#172033">
+  <meta name="color-scheme" content="light">
+  <meta property="og:title" content="Pramit Roy | Student Developer">
+  <meta property="og:description" content="Student developer seeking Fall 2026 co-op opportunities in Toronto and the GTA.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile-optimized.jpg">
+  <meta property="og:site_name" content="Pramit Roy Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Pramit Roy | Student Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data helps search engines understand who this portfolio represents. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pramit Roy",
+      "jobTitle": "Student Developer",
+      "email": "mailto:pramit.roy@example.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/your-linkedin",
+        "https://github.com/your-github"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Accessibility shortcut for keyboard users. -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Site header and navigation. Add or remove nav links here when sections change. -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#home" aria-label="Pramit Roy home">PR</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-resume" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero section: first impression, core positioning, and primary calls to action. -->
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Student Developer | Toronto/GTA</p>
+        <h1 id="hero-title">Pramit Roy</h1>
+        <p class="hero-tagline">Building thoughtful web experiences while seeking Fall 2026 co-op opportunities in Toronto and the GTA.</p>
+        <dl class="hero-highlights" aria-label="Portfolio highlights">
+          <div>
+            <dt>Focus</dt>
+            <dd>Full-stack web development</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd>Fall 2026 co-op</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Toronto/GTA</dd>
+          </div>
+        </dl>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a class="btn text" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/profile-optimized.jpg" alt="Portrait of Pramit Roy" width="520" height="520" decoding="async" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- About section: short personal introduction for recruiters and collaborators. -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Curious, practical, and always learning.</h2>
+      </div>
+      <div class="about-grid">
+        <p>I am a student developer focused on creating clean, accessible, and useful digital products. I enjoy working across the front end and back end, learning new tools quickly, and turning ideas into polished experiences.</p>
+        <p>I am currently looking for Fall 2026 co-op opportunities where I can contribute to real projects, grow with a strong engineering team, and build software that helps people get things done.</p>
+      </div>
+    </section>
+
+    <!-- Skills section: keep this list focused on tools you can discuss in interviews. -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">Tools I use to build.</h2>
+      </div>
+      <ul class="skill-list" aria-label="Technical skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Accessibility</li>
+        <li>Git & GitHub</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <!-- Projects section: replace these cards with real projects as your portfolio grows. -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2 id="projects-title">Selected work.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-number">01</p>
+          <h3>Campus Planner App</h3>
+          <p>A concept dashboard for organizing courses, deadlines, and weekly study goals with a responsive interface.</p>
+          <ul class="project-tags" aria-label="Campus Planner App technologies">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <span class="project-status">Case study coming soon</span>
+        </article>
+        <article class="project-card">
+          <p class="project-number">02</p>
+          <h3>Developer Portfolio</h3>
+          <p>A personal site focused on semantic HTML, accessible navigation, modern CSS, and lightweight interactions.</p>
+          <ul class="project-tags" aria-label="Developer Portfolio technologies">
+            <li>Accessibility</li>
+            <li>Responsive UI</li>
+          </ul>
+          <span class="project-status">In progress</span>
+        </article>
+        <article class="project-card">
+          <p class="project-number">03</p>
+          <h3>Task Tracker API</h3>
+          <p>A planned back-end project for managing tasks, users, and status updates through clean API endpoints.</p>
+          <ul class="project-tags" aria-label="Task Tracker API technologies">
+            <li>Node.js</li>
+            <li>API Design</li>
+            <li>SQL</li>
+          </ul>
+          <span class="project-status">Planned build</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact section: update the placeholder email, LinkedIn, and GitHub links. -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let's build something useful.</h2>
+        <p>I am open to Fall 2026 co-op roles, technical conversations, and project collaborations in Toronto and the GTA.</p>
+        <address class="contact-links">
+          <a href="mailto:pramit.roy@example.com">pramit.roy@example.com</a>
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer year is filled in by script.js. -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Pramit Roy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
