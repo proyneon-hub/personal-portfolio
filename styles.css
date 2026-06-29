@@ -389,6 +389,20 @@ button:focus-visible {
   width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto;
   padding: 96px 0;
+  scroll-margin-top: 90px;
+}
+
+.no-break {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+.role-lead,
+.role-divider,
+.role-comma,
+.role-amp {
+  white-space: normal;
 }
 
 /* Hero section: main intro, portrait, highlights, and call-to-action buttons. */
@@ -454,6 +468,7 @@ h3 {
   font-size: clamp(1.12rem, 2.3vw, 1.48rem);
   font-weight: 800;
   line-height: 1.3;
+  overflow-wrap: normal;
   text-wrap: balance;
 }
 
@@ -1113,10 +1128,10 @@ h3 {
   .nav,
   .section,
   .site-footer {
-    width: 100%;
+    width: calc(100% - 32px);
     max-width: 100%;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .section {
@@ -1137,9 +1152,23 @@ h3 {
   }
 
   .hero-role {
-    font-size: 1rem;
+    font-size: 0.98rem;
     line-height: 1.35;
-    word-break: break-word;
+    word-break: normal;
+  }
+
+  .hero-role .role-lead,
+  .hero-role .role-devops {
+    display: block;
+  }
+
+  .hero-role .role-divider,
+  .hero-role .role-amp {
+    display: none;
+  }
+
+  .hero-role .role-devops::before {
+    content: "& ";
   }
 
   .hero-tagline {
@@ -1159,6 +1188,7 @@ h3 {
   .btn {
     min-height: auto;
     padding: 14px;
+    font-size: 0.95rem;
   }
 
   .hero-visual img {
