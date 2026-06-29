@@ -2,10 +2,65 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a[href^='#']");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeColor = document.querySelector("meta[name='theme-color']");
 const year = document.querySelector("#year");
+const themeStorageKey = "portfolio-theme";
+const darkThemeColor = "#101112";
+const lightThemeColor = "#172033";
 
 if (year) {
   year.textContent = new Date().getFullYear();
+}
+
+const getStoredTheme = () => {
+  try {
+    return localStorage.getItem(themeStorageKey);
+  } catch {
+    return null;
+  }
+};
+
+const storeTheme = (theme) => {
+  try {
+    localStorage.setItem(themeStorageKey, theme);
+  } catch {
+    // Theme persistence is optional; the visual toggle still works without it.
+  }
+};
+
+const getPreferredTheme = () => {
+  const storedTheme = getStoredTheme();
+
+  if (storedTheme === "dark" || storedTheme === "light") {
+    return storedTheme;
+  }
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+};
+
+const applyTheme = (theme) => {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  }
+
+  if (themeColor) {
+    themeColor.setAttribute("content", isDark ? darkThemeColor : lightThemeColor);
+  }
+};
+
+applyTheme(getPreferredTheme());
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(nextTheme);
+    storeTheme(nextTheme);
+  });
 }
 
 // Mobile navigation: open/close the menu and make Escape/resize behave cleanly.

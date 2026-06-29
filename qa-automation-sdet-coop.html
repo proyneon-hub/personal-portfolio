@@ -6,11 +6,26 @@
   <meta name="description" content="Pramit Roy - QA Automation and SDET co-op profile focused on testing, debugging, root-cause troubleshooting, deployment validation, and documentation.">
   <meta name="author" content="Pramit Roy">
   <meta name="theme-color" content="#172033">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="Pramit Roy | QA Automation / SDET Co-op">
   <meta property="og:description" content="QA/SDET co-op profile with issue isolation, root-cause troubleshooting, deployment validation, documentation, and software project experience.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/profile-optimized.jpg">
   <title>Pramit Roy | QA Automation / SDET Co-op</title>
+  <script>
+    (() => {
+      try {
+        const storedTheme = localStorage.getItem("portfolio-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        if (theme === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,6 +45,13 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="software-developer-coop.html">Software</a></li>
         <li><a href="devops-cloud-it-automation-coop.html">DevOps</a></li>
+        <li class="theme-control">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+          </button>
+        </li>
         <li><a class="nav-resume" href="assets/resume-qa-automation-sdet-coop.pdf" target="_blank" rel="noopener">Resume</a></li>
       </ul>
     </nav>

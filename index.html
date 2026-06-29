@@ -7,7 +7,7 @@
   <meta name="description" content="Pramit Roy is a software engineering student with real IT operations experience who can build tools for support, deployment, and service management. Seeking Fall 2026 co-op roles in Toronto/GTA.">
   <meta name="author" content="Pramit Roy">
   <meta name="theme-color" content="#172033">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="Pramit Roy | Software & IT Co-op Portfolio">
   <meta property="og:description" content="Software engineering student with IT operations experience, building tools for support, deployment, and service management. Seeking Fall 2026 co-op roles in Toronto/GTA.">
   <meta property="og:type" content="website">
@@ -15,6 +15,20 @@
   <meta property="og:site_name" content="Pramit Roy Portfolio">
   <meta name="twitter:card" content="summary_large_image">
   <title>Pramit Roy | Software & IT Co-op Portfolio</title>
+  <script>
+    (() => {
+      try {
+        const storedTheme = localStorage.getItem("portfolio-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        if (theme === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 
   <!-- Structured data helps search engines understand who this portfolio represents. -->
@@ -59,6 +73,13 @@
         <li><a href="#versions">Versions</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="theme-control">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-toggle-track" aria-hidden="true">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+          </button>
+        </li>
         <li><a class="nav-resume" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
       </ul>
     </nav>
