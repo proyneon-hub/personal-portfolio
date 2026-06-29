@@ -395,9 +395,9 @@ button:focus-visible {
 .hero {
   min-height: calc(100vh - 72px);
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.75fr);
+  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.72fr);
   align-items: center;
-  gap: 56px;
+  gap: 44px;
   padding-top: 72px;
 }
 
@@ -531,6 +531,11 @@ h3 {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 34px;
+}
+
+.hero-actions .btn {
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 .resume-quick-links {
@@ -1108,12 +1113,15 @@ h3 {
   .nav,
   .section,
   .site-footer {
-    width: calc(100vw - 48px);
-    max-width: calc(100vw - 48px);
+    width: 100%;
+    max-width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .section {
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .hero {
@@ -1139,11 +1147,12 @@ h3 {
   }
 
   .hero-badges {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
   }
 
   .hero-badges li {
-    flex: 1 1 140px;
     justify-content: center;
   }
 
