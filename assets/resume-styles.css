@@ -18,12 +18,12 @@ body {
   width: 8.5in;
   min-height: 11in;
   margin: 0 auto;
-  padding: 0.42in 0.52in;
+  padding: 0.34in 0.48in;
   background: #fff;
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10.2pt;
-  line-height: 1.32;
+  font-size: 9.2pt;
+  line-height: 1.24;
 }
 
 a {
@@ -33,7 +33,7 @@ a {
 
 .resume-header {
   border-bottom: 1.5px solid var(--ink);
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 h1,
@@ -44,49 +44,49 @@ p {
 }
 
 h1 {
-  font-size: 23pt;
+  font-size: 21pt;
   letter-spacing: 0;
   line-height: 1;
 }
 
 .role-title {
-  margin-top: 5px;
+  margin-top: 4px;
   color: var(--accent);
-  font-size: 11.2pt;
+  font-size: 10.2pt;
   font-weight: 700;
 }
 
 .contact-line {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px 10px;
-  margin-top: 8px;
+  gap: 3px 9px;
+  margin-top: 6px;
   color: var(--muted);
-  font-size: 8.8pt;
+  font-size: 8.3pt;
 }
 
 .section {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 h2 {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
-  font-size: 10.6pt;
+  font-size: 9.6pt;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .summary {
-  margin-top: 7px;
+  margin-top: 5px;
   color: var(--ink);
 }
 
 .skills {
   display: grid;
-  gap: 4px;
-  margin-top: 7px;
+  gap: 2px;
+  margin-top: 5px;
 }
 
 .skills p {
@@ -98,7 +98,7 @@ h2 {
 }
 
 .item {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .item-heading {
@@ -116,18 +116,18 @@ h2 {
 }
 
 .subheading {
-  margin-top: 1px;
+  margin-top: 0;
   color: var(--muted);
   font-style: italic;
 }
 
 ul {
-  margin: 4px 0 0 17px;
+  margin: 3px 0 0 15px;
   padding: 0;
 }
 
 li {
-  margin: 2px 0;
+  margin: 1.2px 0;
   padding-left: 1px;
 }
 
@@ -137,11 +137,17 @@ li {
 
 .tagline {
   display: inline-block;
-  margin-top: 7px;
+  margin-top: 5px;
   padding: 5px 7px;
   background: var(--soft);
   color: var(--accent);
   font-weight: 700;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 14px;
 }
 
 @page {

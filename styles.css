@@ -381,6 +381,45 @@ h3 {
   font-size: clamp(1.1rem, 2.4vw, 1.45rem);
 }
 
+.hero-role {
+  max-width: 820px;
+  margin: 18px 0 0;
+  color: var(--text);
+  font-size: clamp(1.12rem, 2.3vw, 1.48rem);
+  font-weight: 800;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 760px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-badges li {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 38px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  text-align: center;
+  word-break: break-word;
+}
+
 .variant-hero h1 {
   max-width: 830px;
   font-size: clamp(1.9rem, 4.2vw, 3.4rem);
@@ -417,7 +456,7 @@ h3 {
 .hero-highlights dd {
   margin: 4px 0 0;
   color: var(--text);
-  font-weight: 850;
+  font-weight: 800;
   line-height: 1.25;
 }
 
@@ -428,17 +467,56 @@ h3 {
   margin-top: 34px;
 }
 
+.resume-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 760px;
+  margin-top: 16px;
+}
+
+.resume-quick-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-alt);
+  color: var(--accent-strong);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.resume-quick-links a:hover {
+  background: var(--accent-soft);
+}
+
 /* Reusable button styles used in the hero and other action areas. */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  min-width: 0;
   min-height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
   border-radius: var(--radius);
   font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
   text-decoration: none;
+  white-space: normal;
+  word-break: break-word;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
@@ -517,6 +595,10 @@ h3 {
   font-size: 1.08rem;
 }
 
+.about-grid-wide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 /* Skills section category cards and pill lists. */
 .skills-grid {
   display: grid;
@@ -556,7 +638,7 @@ h3 {
   background: var(--surface-alt);
   color: var(--text);
   font-size: 0.92rem;
-  font-weight: 750;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -589,6 +671,10 @@ h3 {
   gap: 20px;
 }
 
+.role-path-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .role-card {
   padding: 24px;
   border: 1px solid var(--line);
@@ -600,6 +686,40 @@ h3 {
 .role-card h3 {
   margin-bottom: 18px;
   font-size: 1.18rem;
+}
+
+.role-path-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.role-path-card h3 {
+  margin-bottom: 0;
+}
+
+.role-path-card .role-list {
+  margin-bottom: 6px;
+}
+
+.role-path-card .btn {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+}
+
+.path-label {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card-intro {
+  margin: 0;
+  color: var(--muted);
 }
 
 .role-list {
@@ -621,6 +741,10 @@ h3 {
   gap: 20px;
 }
 
+.project-grid-wide {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .project-card {
   display: flex;
   min-height: 380px;
@@ -639,7 +763,7 @@ h3 {
 }
 
 .project-number {
-  margin: 0 0 42px;
+  margin: 0 0 20px;
   color: var(--accent-strong);
   font-weight: 900;
 }
@@ -673,7 +797,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0 0 24px;
+  margin: 18px 0 20px;
   padding: 0;
   list-style: none;
 }
@@ -687,6 +811,18 @@ h3 {
   font-weight: 800;
 }
 
+.project-highlights {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 24px 18px;
+  padding: 0;
+  color: var(--muted);
+}
+
+.project-highlights li::marker {
+  color: var(--accent-strong);
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
@@ -698,6 +834,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  min-width: 0;
   min-height: 40px;
   padding: 8px 12px;
   border: 1px solid var(--line);
@@ -707,7 +845,11 @@ h3 {
   cursor: pointer;
   font-size: 0.92rem;
   font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
   text-decoration: none;
+  white-space: normal;
+  word-break: break-word;
   transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
 }
 
@@ -747,17 +889,28 @@ h3 {
 
 .contact-links a {
   display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+  min-width: 0;
   padding: 10px 14px;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: var(--radius);
   color: var(--solid-text);
   font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
   text-decoration: none;
+  white-space: normal;
+  word-break: break-word;
   transition: background 180ms ease;
 }
 
 .contact-links a:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+
+.improvement-card {
+  max-width: 820px;
 }
 
 /* Footer. */
@@ -834,8 +987,11 @@ h3 {
   }
 
   .about-grid,
+  .about-grid-wide,
   .role-grid,
-  .project-grid {
+  .role-path-grid,
+  .project-grid,
+  .project-grid-wide {
     grid-template-columns: 1fr;
   }
 
@@ -850,13 +1006,61 @@ h3 {
 
 /* Phone layout adjustments. */
 @media (max-width: 560px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav,
+  .section,
+  .site-footer {
+    width: calc(100vw - 48px);
+    max-width: calc(100vw - 48px);
+  }
+
   .section {
-    width: min(calc(100% - 24px), var(--max-width));
     padding: 70px 0;
   }
 
   .hero {
     padding-top: 48px;
+  }
+
+  .hero-content,
+  .hero-badges,
+  .hero-actions,
+  .resume-quick-links {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-role {
+    font-size: 1rem;
+    line-height: 1.35;
+    word-break: break-word;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-badges {
+    gap: 8px;
+  }
+
+  .hero-badges li {
+    flex: 1 1 140px;
+    justify-content: center;
+  }
+
+  .btn {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .hero-visual img {
+    width: min(100%, 320px);
   }
 
   h1 {
@@ -873,12 +1077,15 @@ h3 {
   }
 
   .hero-actions,
-  .contact-links {
+  .contact-links,
+  .resume-quick-links {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .btn,
-  .contact-links a {
+  .contact-links a,
+  .resume-quick-links a {
     width: 100%;
   }
 
