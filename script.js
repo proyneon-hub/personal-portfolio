@@ -70,13 +70,14 @@ themeToggles.forEach((themeToggle) => {
 });
 
 // Mobile navigation: open/close the menu and make Escape/resize behave cleanly.
-if (navToggle && navLinks) {
-  const closeMenu = () => {
-    navToggle.setAttribute("aria-expanded", "false");
-    navLinks.classList.remove("open");
-    document.body.classList.remove("nav-open");
-  };
+const closeMenu = () => {
+  if (!navToggle || !navLinks) return;
+  navToggle.setAttribute("aria-expanded", "false");
+  navLinks.classList.remove("open");
+  document.body.classList.remove("nav-open");
+};
 
+if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -98,6 +99,45 @@ if (navToggle && navLinks) {
     if (window.innerWidth > 860) {
       closeMenu();
     }
+  });
+}
+
+// Resume dropdown in nav: click to open/close on desktop; always expanded on mobile via CSS.
+const resumeWrapper = document.querySelector(".nav-resume-wrapper");
+const resumeBtn = document.querySelector(".nav-resume-btn");
+
+if (resumeWrapper && resumeBtn) {
+  const closeDropdown = () => {
+    resumeWrapper.removeAttribute("data-open");
+    resumeBtn.setAttribute("aria-expanded", "false");
+  };
+
+  resumeBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = resumeWrapper.hasAttribute("data-open");
+    if (isOpen) {
+      closeDropdown();
+    } else {
+      resumeWrapper.dataset.open = "";
+      resumeBtn.setAttribute("aria-expanded", "true");
+    }
+  });
+
+  document.addEventListener("click", closeDropdown);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeDropdown();
+  });
+
+  document.querySelectorAll(".nav-resume-dropdown a").forEach((link) => {
+    link.addEventListener("click", () => {
+      closeDropdown();
+      closeMenu();
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 860) closeDropdown();
   });
 }
 

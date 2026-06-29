@@ -178,14 +178,80 @@ button:focus-visible {
   color: var(--accent-strong);
 }
 
-.nav-links .nav-resume {
-  background: var(--text);
-  color: var(--bg);
+.nav-resume-wrapper {
+  position: relative;
 }
 
-.nav-links .nav-resume:hover {
+.nav-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--text);
+  color: var(--bg);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.nav-resume-btn:hover {
   background: var(--accent-strong);
   color: var(--accent-contrast);
+}
+
+.resume-caret {
+  display: inline-block;
+  font-size: 0.72em;
+  line-height: 1;
+  transition: transform 180ms ease;
+}
+
+.nav-resume-wrapper[data-open] .resume-caret {
+  transform: rotate(180deg);
+}
+
+.nav-resume-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 30;
+  min-width: 210px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.nav-resume-wrapper[data-open] .nav-resume-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-resume-dropdown a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: calc(var(--radius) - 2px);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.nav-resume-dropdown a:hover,
+.nav-resume-dropdown a:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
 }
 
 .theme-control {
@@ -970,10 +1036,6 @@ h3 {
     padding: 4px 0;
   }
 
-  .nav-links .nav-resume {
-    margin-top: 4px;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1001,6 +1063,37 @@ h3 {
 
   .hero-highlights {
     grid-template-columns: 1fr;
+  }
+
+  /* Dropdown: show all three links inline in the mobile nav panel. */
+  .nav-resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .nav-resume-btn .resume-caret {
+    display: none;
+  }
+
+  .nav-resume-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: static;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0 0 0 10px;
+    border-left: 2px solid var(--line);
+  }
+
+  .nav-resume-dropdown a {
+    justify-content: center;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.92rem;
   }
 }
 
