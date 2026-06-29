@@ -2,7 +2,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a[href^='#']");
-const themeToggle = document.querySelector(".theme-toggle");
+const themeToggles = document.querySelectorAll(".theme-toggle");
 const themeColor = document.querySelector("meta[name='theme-color']");
 const year = document.querySelector("#year");
 const themeStorageKey = "portfolio-theme";
@@ -43,10 +43,10 @@ const applyTheme = (theme) => {
   const isDark = theme === "dark";
   document.documentElement.dataset.theme = isDark ? "dark" : "light";
 
-  if (themeToggle) {
+  themeToggles.forEach((themeToggle) => {
     themeToggle.setAttribute("aria-pressed", String(isDark));
     themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-  }
+  });
 
   if (themeColor) {
     themeColor.setAttribute("content", isDark ? darkThemeColor : lightThemeColor);
@@ -55,13 +55,13 @@ const applyTheme = (theme) => {
 
 applyTheme(getPreferredTheme());
 
-if (themeToggle) {
+themeToggles.forEach((themeToggle) => {
   themeToggle.addEventListener("click", () => {
     const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     applyTheme(nextTheme);
     storeTheme(nextTheme);
   });
-}
+});
 
 // Mobile navigation: open/close the menu and make Escape/resize behave cleanly.
 if (navToggle && navLinks) {

@@ -213,6 +213,10 @@ button:focus-visible {
   transform: translateY(-1px);
 }
 
+.mobile-theme-toggle {
+  display: none;
+}
+
 .theme-toggle-track {
   position: relative;
   width: 34px;
@@ -732,8 +736,14 @@ h3 {
 
 /* Tablet and small laptop layout adjustments. */
 @media (max-width: 860px) {
+  .mobile-theme-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
   .nav-toggle {
     display: block;
+    margin-left: 8px;
   }
 
   .nav-links {
@@ -757,6 +767,10 @@ h3 {
 
   .nav-links a {
     justify-content: center;
+  }
+
+  .nav-links .theme-control {
+    display: none;
   }
 
   .theme-control {
