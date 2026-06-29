@@ -95,7 +95,7 @@ button:focus-visible {
 }
 
 .nav {
-  width: min(100% - 32px, var(--max-width));
+  width: min(calc(100% - 32px), var(--max-width));
   min-height: 72px;
   margin: 0 auto;
   display: flex;
@@ -192,7 +192,7 @@ button:focus-visible {
 
 /* Shared page section layout and heading styles. */
 .section {
-  width: min(100% - 32px, var(--max-width));
+  width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto;
   padding: 96px 0;
 }
@@ -251,6 +251,16 @@ h3 {
   margin: 24px 0 0;
   color: var(--muted);
   font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+}
+
+.variant-hero h1 {
+  max-width: 830px;
+  font-size: clamp(1.9rem, 4.2vw, 3.4rem);
+  overflow-wrap: anywhere;
+}
+
+.variant-hero .hero-tagline {
+  font-size: clamp(1.02rem, 2vw, 1.24rem);
 }
 
 .hero-highlights {
@@ -334,6 +344,11 @@ h3 {
 
 .hero-visual {
   position: relative;
+  min-width: 0;
+}
+
+.hero-content {
+  min-width: 0;
 }
 
 .hero-visual::before {
@@ -415,6 +430,28 @@ h3 {
   font-size: 0.92rem;
   font-weight: 750;
   text-align: center;
+}
+
+.priority-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.priority-skills li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 800;
+  box-shadow: 0 6px 18px rgba(23, 32, 51, 0.05);
 }
 
 /* Role fit section for quickly matching portfolio evidence to target job families. */
@@ -597,7 +634,7 @@ h3 {
 
 /* Footer. */
 .site-footer {
-  width: min(100% - 32px, var(--max-width));
+  width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto;
   padding: 28px 0 42px;
   color: var(--muted);
@@ -671,7 +708,7 @@ h3 {
 /* Phone layout adjustments. */
 @media (max-width: 560px) {
   .section {
-    width: min(100% - 24px, var(--max-width));
+    width: min(calc(100% - 24px), var(--max-width));
     padding: 70px 0;
   }
 
@@ -681,6 +718,15 @@ h3 {
 
   h1 {
     font-size: clamp(3rem, 16vw, 4.2rem);
+  }
+
+  .variant-hero h1 {
+    font-size: clamp(1.6rem, 8vw, 2rem);
+    line-height: 1.12;
+  }
+
+  .variant-hero .hero-tagline {
+    font-size: 1rem;
   }
 
   .hero-actions,
