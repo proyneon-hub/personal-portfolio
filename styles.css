@@ -156,7 +156,7 @@ button:focus-visible {
   list-style: none;
 }
 
-.nav-links a {
+.nav-links > li > a {
   display: inline-flex;
   padding: 10px 14px;
   border-radius: var(--radius);
@@ -167,13 +167,13 @@ button:focus-visible {
   transition: background 180ms ease, color 180ms ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links > li > a:hover,
+.nav-links > li > a.active {
   background: var(--accent-soft);
   color: var(--accent-strong);
 }
 
-.nav-links a[aria-current="location"] {
+.nav-links > li > a[aria-current="location"] {
   background: var(--accent-soft);
   color: var(--accent-strong);
 }
@@ -1023,7 +1023,7 @@ h3 {
     display: flex;
   }
 
-  .nav-links a {
+  .nav-links > li > a {
     justify-content: center;
   }
 
