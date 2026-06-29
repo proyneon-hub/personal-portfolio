@@ -36,16 +36,22 @@ const getPreferredTheme = () => {
     return storedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    return "dark";
+  }
+
+  return "light";
 };
 
 const applyTheme = (theme) => {
   const isDark = theme === "dark";
-  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  const resolvedTheme = isDark ? "dark" : "light";
+  document.documentElement.dataset.theme = resolvedTheme;
 
   themeToggles.forEach((themeToggle) => {
     themeToggle.setAttribute("aria-pressed", String(isDark));
     themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    themeToggle.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
   });
 
   if (themeColor) {

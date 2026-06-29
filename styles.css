@@ -194,23 +194,50 @@ button:focus-visible {
 }
 
 .theme-toggle {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 40px;
+  width: 56px;
+  height: 44px;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
-  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+  box-shadow: 0 8px 20px rgba(23, 32, 51, 0.08);
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
 .theme-toggle:hover {
   background: var(--accent-soft);
   border-color: var(--accent-strong);
+  box-shadow: 0 12px 24px rgba(23, 32, 51, 0.12);
   transform: translateY(-1px);
+}
+
+.theme-toggle::before,
+.theme-toggle::after {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  font-size: 0.76rem;
+  line-height: 1;
+  transform: translateY(-50%);
+  transition: color 180ms ease, opacity 180ms ease;
+}
+
+.theme-toggle::before {
+  left: 9px;
+  content: "\263E";
+  color: var(--muted);
+}
+
+.theme-toggle::after {
+  right: 8px;
+  content: "\2600";
+  color: #b45309;
 }
 
 .mobile-theme-toggle {
@@ -219,32 +246,44 @@ button:focus-visible {
 
 .theme-toggle-track {
   position: relative;
-  width: 34px;
-  height: 18px;
+  width: 42px;
+  height: 24px;
   border-radius: 999px;
-  background: var(--line);
-  transition: background 180ms ease;
+  background: #e2e8f0;
+  box-shadow: inset 0 0 0 1px rgba(23, 32, 51, 0.16);
+  transition: background 180ms ease, box-shadow 180ms ease;
 }
 
 .theme-toggle-thumb {
   position: absolute;
+  z-index: 2;
   top: 3px;
   left: 3px;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--surface);
-  box-shadow: 0 1px 4px rgba(23, 32, 51, 0.3);
+  box-shadow: 0 2px 7px rgba(23, 32, 51, 0.36);
   transition: transform 180ms ease, background 180ms ease;
 }
 
 :root[data-theme="dark"] .theme-toggle-track {
-  background: var(--accent);
+  background: #075985;
+  box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.42);
 }
 
 :root[data-theme="dark"] .theme-toggle-thumb {
   background: var(--text);
-  transform: translateX(16px);
+  transform: translateX(18px);
+}
+
+:root[data-theme="dark"] .theme-toggle::before {
+  color: #7dd3fc;
+}
+
+:root[data-theme="dark"] .theme-toggle::after {
+  color: var(--muted);
+  opacity: 0.72;
 }
 
 .nav-toggle {
