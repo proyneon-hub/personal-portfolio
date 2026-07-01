@@ -1,223 +1,386 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pramit Roy - DevOps / IT Automation and Systems Analyst co-op profile focused on deployment validation, systems reliability, Git, Python, networking, and documentation.">
-  <meta name="author" content="Pramit Roy">
-  <meta name="theme-color" content="#172033">
-  <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Pramit Roy | DevOps / IT Automation / Systems Analyst Co-op">
-  <meta property="og:description" content="DevOps / IT Automation and Systems Analyst co-op profile with IT systems experience, deployment validation, troubleshooting, documentation, and software projects.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/profile-optimized.jpg">
-  <title>Pramit Roy | DevOps / IT Automation / Systems Analyst Co-op</title>
-  <script>
-    (() => {
-      try {
-        const storedTheme = localStorage.getItem("portfolio-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || (prefersDark ? "dark" : "light");
-        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
-      } catch {
-        document.documentElement.dataset.theme = "light";
-      }
-    })();
-  </script>
-  <link rel="stylesheet" href="styles.css?v=20260629-hiring-funnel-mobile-fix">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="logo" href="index.html" aria-label="Pramit Roy home">PR</a>
-      <button class="theme-toggle mobile-theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-        <span class="theme-toggle-track" aria-hidden="true">
-          <span class="theme-toggle-thumb"></span>
-        </span>
-      </button>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links" id="primary-menu">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#fit">Why Systems</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="software-developer-coop.html">Software</a></li>
-        <li><a href="qa-automation-sdet-coop.html">QA / SDET</a></li>
-        <li class="theme-control">
-          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-            <span class="theme-toggle-track" aria-hidden="true">
-              <span class="theme-toggle-thumb"></span>
-            </span>
-          </button>
-        </li>
-        <li><a class="nav-resume" href="assets/resume-devops-cloud-it-automation-coop.pdf" target="_blank" rel="noopener" aria-label="Download DevOps / IT Automation co-op resume PDF">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pramit Roy - DevOps / IT Automation and Systems Analyst co-op profile focused on deployment validation, systems reliability, Git, Python, networking, and documentation."
+    />
+    <meta name="author" content="Pramit Roy" />
+    <meta name="theme-color" content="#172033" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      property="og:title"
+      content="Pramit Roy | DevOps / IT Automation / Systems Analyst Co-op"
+    />
+    <meta
+      property="og:description"
+      content="DevOps / IT Automation and Systems Analyst co-op profile with IT systems experience, deployment validation, troubleshooting, documentation, and software projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/profile-optimized.jpg" />
+    <title>Pramit Roy | DevOps / IT Automation / Systems Analyst Co-op</title>
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.dataset.theme =
+            theme === "dark" ? "dark" : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link
+      rel="stylesheet"
+      href="styles.css?v=20260629-hiring-funnel-mobile-fix"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Pramit Roy home">PR</a>
+        <button
+          class="theme-toggle mobile-theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-track" aria-hidden="true">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#fit">Why Systems</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="software-developer-coop.html">Software</a></li>
+          <li><a href="qa-automation-sdet-coop.html">QA / SDET</a></li>
+          <li class="theme-control">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to dark mode"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-track" aria-hidden="true">
+                <span class="theme-toggle-thumb"></span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <a
+              class="nav-resume"
+              href="assets/resume-devops-cloud-it-automation-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download DevOps / IT Automation co-op resume PDF"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="main-content">
-    <section class="hero section variant-hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow">DevOps / IT Automation / Systems Analyst Co-op</p>
-        <h1 id="hero-title">DevOps / IT Automation / Systems Analyst Co-op Candidate | Git, Python, Linux, Deployment Validation, Networking</h1>
-        <p class="hero-tagline">I connect software skills with hands-on IT systems experience: troubleshooting, deployment checks, technical documentation, device workflows, and reliability thinking. I am looking for roles where automation, release validation, systems analysis, and cloud-adjacent operations matter.</p>
-        <dl class="hero-highlights" aria-label="DevOps and cloud highlights">
-          <div>
-            <dt>Systems Base</dt>
-            <dd>5+ years IT experience</dd>
+    <main id="main-content">
+      <section
+        class="hero section variant-hero"
+        id="home"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-content">
+          <p class="eyebrow">DevOps / IT Automation / Systems Analyst Co-op</p>
+          <h1 id="hero-title">
+            DevOps / IT Automation / Systems Analyst Co-op Candidate | Git,
+            Python, Linux, Deployment Validation, Networking
+          </h1>
+          <p class="hero-tagline">
+            I connect software skills with hands-on IT systems experience:
+            troubleshooting, deployment checks, technical documentation, device
+            workflows, and reliability thinking. I am looking for roles where
+            automation, release validation, systems analysis, and cloud-adjacent
+            operations matter.
+          </p>
+          <dl class="hero-highlights" aria-label="DevOps and cloud highlights">
+            <div>
+              <dt>Systems Base</dt>
+              <dd>5+ years IT experience</dd>
+            </div>
+            <div>
+              <dt>Automation Base</dt>
+              <dd>Python, Git, CLI, scripting habits</dd>
+            </div>
+            <div>
+              <dt>Ops Fit</dt>
+              <dd>Deployments, documentation, reliability</dd>
+            </div>
+          </dl>
+          <div class="hero-actions">
+            <a
+              class="btn primary"
+              href="assets/resume-devops-cloud-it-automation-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download DevOps / IT Automation co-op resume PDF"
+              >Open Resume</a
+            >
+            <a class="btn secondary" href="#fit">See Why It Fits</a>
+            <a class="btn text" href="mailto:royp15@mcmaster.ca">Contact</a>
           </div>
-          <div>
-            <dt>Automation Base</dt>
-            <dd>Python, Git, CLI, scripting habits</dd>
-          </div>
-          <div>
-            <dt>Ops Fit</dt>
-            <dd>Deployments, documentation, reliability</dd>
-          </div>
-        </dl>
-        <div class="hero-actions">
-          <a class="btn primary" href="assets/resume-devops-cloud-it-automation-coop.pdf" target="_blank" rel="noopener" aria-label="Download DevOps / IT Automation co-op resume PDF">Open Resume</a>
-          <a class="btn secondary" href="#fit">See Why It Fits</a>
-          <a class="btn text" href="mailto:royp15@mcmaster.ca">Contact</a>
         </div>
-      </div>
-      <div class="hero-visual">
-        <img src="assets/profile-optimized.jpg" alt="Portrait of Pramit Roy" width="520" height="520" decoding="async" fetchpriority="high">
-      </div>
-    </section>
+        <div class="hero-visual">
+          <img
+            src="assets/profile-optimized.jpg"
+            alt="Portrait of Pramit Roy"
+            width="520"
+            height="520"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
 
-    <section class="section skills" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading">
-        <p class="eyebrow">Priority Skills</p>
-        <h2 id="skills-title">Systems and automation skills I can build from.</h2>
-      </div>
-      <ul class="priority-skills" aria-label="Priority DevOps and IT automation skills">
-        <li>Git</li>
-        <li>Python</li>
-        <li>Linux</li>
-        <li>CLI</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>REST APIs</li>
-        <li>Deployment Validation</li>
-        <li>Production Support</li>
-        <li>Monitoring Concepts</li>
-        <li>Technical Documentation</li>
-        <li>Network Fundamentals</li>
-        <li>Testing</li>
-        <li>Troubleshooting</li>
-      </ul>
-    </section>
+      <section
+        class="section skills"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Priority Skills</p>
+          <h2 id="skills-title">
+            Systems and automation skills I can build from.
+          </h2>
+        </div>
+        <ul
+          class="priority-skills"
+          aria-label="Priority DevOps and IT automation skills"
+        >
+          <li>Git</li>
+          <li>Python</li>
+          <li>Linux</li>
+          <li>CLI</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>REST APIs</li>
+          <li>Deployment Validation</li>
+          <li>Production Support</li>
+          <li>Monitoring Concepts</li>
+          <li>Technical Documentation</li>
+          <li>Network Fundamentals</li>
+          <li>Testing</li>
+          <li>Troubleshooting</li>
+        </ul>
+      </section>
 
-    <section class="section role-fit" id="fit" aria-labelledby="fit-title">
-      <div class="section-heading">
-        <p class="eyebrow">Why Systems</p>
-        <h2 id="fit-title">Where my IT background helps most.</h2>
-      </div>
-      <div class="role-grid">
-        <article class="role-card">
-          <h3>Target Roles</h3>
-          <ul class="role-list">
-            <li>DevOps Engineer Co-op</li>
-            <li>IT Automation Co-op</li>
-            <li>Technical Analyst Intern</li>
-            <li>Systems Analyst Co-op</li>
-            <li>Application Support Analyst Co-op</li>
-          </ul>
-        </article>
-        <article class="role-card">
-          <h3>Why It Connects</h3>
-          <ul class="role-list">
-            <li>IT systems experience supports incident response and reliability work</li>
-            <li>Deployment validation connects well to release checks and operational readiness</li>
-            <li>Documentation supports runbooks, handoffs, and repeatable operations</li>
-            <li>Network design project shows VLAN, routing, ACL, and connectivity validation</li>
-            <li>Full-stack project shows how application behavior flows from UI to API to database</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section class="section role-fit" id="fit" aria-labelledby="fit-title">
+        <div class="section-heading">
+          <p class="eyebrow">Why Systems</p>
+          <h2 id="fit-title">Where my IT background helps most.</h2>
+        </div>
+        <div class="role-grid">
+          <article class="role-card">
+            <h3>Target Roles</h3>
+            <ul class="role-list">
+              <li>DevOps Engineer Co-op</li>
+              <li>IT Automation Co-op</li>
+              <li>Technical Analyst Intern</li>
+              <li>Systems Analyst Co-op</li>
+              <li>Application Support Analyst Co-op</li>
+            </ul>
+          </article>
+          <article class="role-card">
+            <h3>Why It Connects</h3>
+            <ul class="role-list">
+              <li>
+                IT systems experience supports incident response and reliability
+                work
+              </li>
+              <li>
+                Deployment validation connects well to release checks and
+                operational readiness
+              </li>
+              <li>
+                Documentation supports runbooks, handoffs, and repeatable
+                operations
+              </li>
+              <li>
+                Network design project shows VLAN, routing, ACL, and
+                connectivity validation
+              </li>
+              <li>
+                Full-stack project shows how application behavior flows from UI
+                to API to database
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2 id="projects-title">Projects that show systems and reliability thinking.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">01</p>
-          <h3>Enterprise Network Design</h3>
-          <p>Secure multi-site enterprise network in Cisco Packet Tracer with VLAN segmentation, 802.1Q trunking, OSPF routing, and extended ACLs.</p>
-          <p class="project-impact">Shows infrastructure thinking, segmentation, security boundaries, and validation through Cisco IOS checks.</p>
-          <ul class="project-tags">
-            <li>Cisco Packet Tracer</li>
-            <li>VLANs</li>
-            <li>OSPF</li>
-            <li>ACLs</li>
-            <li>Validation</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://github.com/proyneon-hub/enterprise-network-design" target="_blank" rel="noopener">View GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">02</p>
-          <h3>IT Ticketing System</h3>
-          <p>Full-stack service workflow app with ticket lifecycle logic, filtering, assignment, update flows, and persistent MongoDB storage.</p>
-          <p class="project-impact">Connects application development with incident, support, and service management workflows.</p>
-          <ul class="project-tags">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>REST APIs</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://it-ticketing-system-pi.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/it-ticketing-system" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3>Personal Portfolio</h3>
-          <p>Static, lightweight site built with semantic HTML, CSS, and JavaScript for fast deployment and simple maintenance.</p>
-          <p class="project-impact">Shows practical delivery habits: accessibility, performance, simple deployment, and clear documentation.</p>
-          <ul class="project-tags">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SEO</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://pramitroy.tech" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/personal-portfolio" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
+      <section
+        class="section projects"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">
+            Projects that show systems and reliability thinking.
+          </h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <h3>Enterprise Network Design</h3>
+            <p>
+              Secure multi-site enterprise network in Cisco Packet Tracer with
+              VLAN segmentation, 802.1Q trunking, OSPF routing, and extended
+              ACLs.
+            </p>
+            <p class="project-impact">
+              Shows infrastructure thinking, segmentation, security boundaries,
+              and validation through Cisco IOS checks.
+            </p>
+            <ul class="project-tags">
+              <li>Cisco Packet Tracer</li>
+              <li>VLANs</li>
+              <li>OSPF</li>
+              <li>ACLs</li>
+              <li>Validation</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://github.com/proyneon-hub/enterprise-network-design"
+                target="_blank"
+                rel="noopener"
+                >View GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <h3>IT Ticketing System</h3>
+            <p>
+              Full-stack service workflow app paired with a Python Support Ops
+              Automation lab for health checks, synthetic login validation,
+              ticket API checks, and Markdown report generation.
+            </p>
+            <p class="project-impact">
+              Connects application development with incident response, runbooks,
+              CI checks, scheduled monitoring, and service-management workflows.
+            </p>
+            <ul class="project-tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Python</li>
+              <li>GitHub Actions</li>
+              <li>Runbooks</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://it-ticketing-system-pi.vercel.app"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/it-ticketing-system"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <h3>Personal Portfolio</h3>
+            <p>
+              Static, lightweight site built with semantic HTML, CSS, and
+              JavaScript for fast deployment and simple maintenance.
+            </p>
+            <p class="project-impact">
+              Shows practical delivery habits: accessibility, performance,
+              simple deployment, and clear documentation.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SEO</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://pramitroy.tech" target="_blank" rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/personal-portfolio"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-panel">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Open to Fall 2026 DevOps / IT Automation and systems co-op roles.</h2>
-        <p>Toronto/GTA preferred. I am interested in teams working on automation, release validation, technical analysis, cloud-adjacent operations, and reliable systems.</p>
-        <address class="contact-links">
-          <a href="mailto:royp15@mcmaster.ca">royp15@mcmaster.ca</a>
-          <a href="https://www.linkedin.com/in/pramit-roy-338729289" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/proyneon-hub" target="_blank" rel="noopener">GitHub</a>
-        </address>
-      </div>
-    </section>
-  </main>
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-panel">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">
+            Open to Fall 2026 DevOps / IT Automation and systems co-op roles.
+          </h2>
+          <p>
+            Toronto/GTA preferred. I am interested in teams working on
+            automation, release validation, technical analysis, cloud-adjacent
+            operations, and reliable systems.
+          </p>
+          <address class="contact-links">
+            <a href="mailto:royp15@mcmaster.ca">royp15@mcmaster.ca</a>
+            <a
+              href="https://www.linkedin.com/in/pramit-roy-338729289"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/proyneon-hub"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </address>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Pramit Roy. DevOps / IT Automation / Systems Analyst Co-op profile.</p>
-  </footer>
-  <script src="script.js?v=20260629-theme-toggle" defer></script>
-</body>
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Pramit Roy. DevOps / IT Automation /
+        Systems Analyst Co-op profile.
+      </p>
+    </footer>
+    <script src="script.js?v=20260629-theme-toggle" defer></script>
+  </body>
 </html>

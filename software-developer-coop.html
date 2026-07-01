@@ -1,219 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pramit Roy - Software Engineering co-op student with JavaScript, TypeScript, Python, SQL, Git, and 5+ years of IT systems experience.">
-  <meta name="author" content="Pramit Roy">
-  <meta name="theme-color" content="#172033">
-  <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Pramit Roy | Software Developer Co-op">
-  <meta property="og:description" content="Software Engineering co-op student with software projects and 5+ years of IT systems experience.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/profile-optimized.jpg">
-  <title>Pramit Roy | Software Developer Co-op</title>
-  <script>
-    (() => {
-      try {
-        const storedTheme = localStorage.getItem("portfolio-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || (prefersDark ? "dark" : "light");
-        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
-      } catch {
-        document.documentElement.dataset.theme = "light";
-      }
-    })();
-  </script>
-  <link rel="stylesheet" href="styles.css?v=20260629-hiring-funnel-mobile-fix">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="logo" href="index.html" aria-label="Pramit Roy home">PR</a>
-      <button class="theme-toggle mobile-theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-        <span class="theme-toggle-track" aria-hidden="true">
-          <span class="theme-toggle-thumb"></span>
-        </span>
-      </button>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links" id="primary-menu">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="qa-automation-sdet-coop.html">QA / SDET</a></li>
-        <li><a href="devops-cloud-it-automation-coop.html">DevOps</a></li>
-        <li class="theme-control">
-          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-            <span class="theme-toggle-track" aria-hidden="true">
-              <span class="theme-toggle-thumb"></span>
-            </span>
-          </button>
-        </li>
-        <li><a class="nav-resume" href="assets/resume-software-developer-coop.pdf" target="_blank" rel="noopener" aria-label="Download Software Developer co-op resume PDF">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pramit Roy - Software Engineering co-op student with JavaScript, TypeScript, Python, SQL, Git, and 5+ years of IT systems experience."
+    />
+    <meta name="author" content="Pramit Roy" />
+    <meta name="theme-color" content="#172033" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:title" content="Pramit Roy | Software Developer Co-op" />
+    <meta
+      property="og:description"
+      content="Software Engineering co-op student with software projects and 5+ years of IT systems experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/profile-optimized.jpg" />
+    <title>Pramit Roy | Software Developer Co-op</title>
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.dataset.theme =
+            theme === "dark" ? "dark" : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <link
+      rel="stylesheet"
+      href="styles.css?v=20260629-hiring-funnel-mobile-fix"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Pramit Roy home">PR</a>
+        <button
+          class="theme-toggle mobile-theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-track" aria-hidden="true">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="qa-automation-sdet-coop.html">QA / SDET</a></li>
+          <li><a href="devops-cloud-it-automation-coop.html">DevOps</a></li>
+          <li class="theme-control">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to dark mode"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-track" aria-hidden="true">
+                <span class="theme-toggle-thumb"></span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <a
+              class="nav-resume"
+              href="assets/resume-software-developer-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Software Developer co-op resume PDF"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="main-content">
-    <section class="hero section variant-hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow">Software Developer Co-op</p>
-        <h1 id="hero-title">Software Engineering Co-op Student | JavaScript/TypeScript, Python, SQL, Git | 5+ Years IT Systems Experience</h1>
-        <p class="hero-tagline">I build practical web applications and bring habits I learned in IT systems work: careful debugging, deployment checks, clear documentation, and reliability. I am looking for Fall 2026 software developer co-op roles across banks, fintech, insurance, and enterprise teams.</p>
-        <dl class="hero-highlights" aria-label="Software developer highlights">
-          <div>
-            <dt>Top Stack</dt>
-            <dd>JavaScript, TypeScript, Python</dd>
+    <main id="main-content">
+      <section
+        class="hero section variant-hero"
+        id="home"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-content">
+          <p class="eyebrow">Software Developer Co-op</p>
+          <h1 id="hero-title">
+            Software Engineering Co-op Student | JavaScript/TypeScript, Python,
+            SQL, Git | 5+ Years IT Systems Experience
+          </h1>
+          <p class="hero-tagline">
+            I build practical web applications and bring habits I learned in IT
+            systems work: careful debugging, deployment checks, clear
+            documentation, and reliability. I am looking for Fall 2026 software
+            developer co-op roles across banks, fintech, insurance, and
+            enterprise teams.
+          </p>
+          <dl
+            class="hero-highlights"
+            aria-label="Software developer highlights"
+          >
+            <div>
+              <dt>Top Stack</dt>
+              <dd>JavaScript, TypeScript, Python</dd>
+            </div>
+            <div>
+              <dt>Backend</dt>
+              <dd>Node.js, REST APIs, SQL</dd>
+            </div>
+            <div>
+              <dt>Work Style</dt>
+              <dd>Debugging, Git, documentation</dd>
+            </div>
+          </dl>
+          <div class="hero-actions">
+            <a
+              class="btn primary"
+              href="assets/resume-software-developer-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Software Developer co-op resume PDF"
+              >Open Resume</a
+            >
+            <a class="btn secondary" href="#projects">View Projects</a>
+            <a class="btn text" href="mailto:royp15@mcmaster.ca">Contact</a>
           </div>
-          <div>
-            <dt>Backend</dt>
-            <dd>Node.js, REST APIs, SQL</dd>
-          </div>
-          <div>
-            <dt>Work Style</dt>
-            <dd>Debugging, Git, documentation</dd>
-          </div>
-        </dl>
-        <div class="hero-actions">
-          <a class="btn primary" href="assets/resume-software-developer-coop.pdf" target="_blank" rel="noopener" aria-label="Download Software Developer co-op resume PDF">Open Resume</a>
-          <a class="btn secondary" href="#projects">View Projects</a>
-          <a class="btn text" href="mailto:royp15@mcmaster.ca">Contact</a>
         </div>
-      </div>
-      <div class="hero-visual">
-        <img src="assets/profile-optimized.jpg" alt="Portrait of Pramit Roy" width="520" height="520" decoding="async" fetchpriority="high">
-      </div>
-    </section>
+        <div class="hero-visual">
+          <img
+            src="assets/profile-optimized.jpg"
+            alt="Portrait of Pramit Roy"
+            width="520"
+            height="520"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
 
-    <section class="section skills" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading">
-        <p class="eyebrow">Priority Skills</p>
-        <h2 id="skills-title">Software skills I can discuss clearly.</h2>
-      </div>
-      <ul class="priority-skills" aria-label="Priority software skills">
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>SQL</li>
-        <li>Git</li>
-        <li>REST APIs</li>
-        <li>HTML/CSS</li>
-        <li>Testing</li>
-        <li>Debugging</li>
-      </ul>
-    </section>
+      <section
+        class="section skills"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Priority Skills</p>
+          <h2 id="skills-title">Software skills I can discuss clearly.</h2>
+        </div>
+        <ul class="priority-skills" aria-label="Priority software skills">
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>Git</li>
+          <li>REST APIs</li>
+          <li>HTML/CSS</li>
+          <li>Testing</li>
+          <li>Debugging</li>
+        </ul>
+      </section>
 
-    <section class="section role-fit" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading">
-        <p class="eyebrow">IT Experience</p>
-        <h2 id="experience-title">Support experience that helps me build more reliable software.</h2>
-      </div>
-      <div class="role-grid">
-        <article class="role-card">
-          <h3>What I Bring</h3>
-          <ul class="role-list">
-            <li>Debugging user-facing and environment-specific issues</li>
-            <li>Support work with clear escalation and ownership</li>
-            <li>Deployment validation before and after changes</li>
-            <li>Technical documentation for repeatable fixes</li>
-            <li>A reliability mindset from real IT workflows</li>
-          </ul>
-        </article>
-        <article class="role-card">
-          <h3>Roles I Am Targeting</h3>
-          <ul class="role-list">
-            <li>Software Developer Co-op</li>
-            <li>Software Engineering Intern</li>
-            <li>Full-Stack Developer Co-op</li>
-            <li>Web Developer Co-op</li>
-            <li>Technical Analyst Intern with coding responsibilities</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section
+        class="section role-fit"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">IT Experience</p>
+          <h2 id="experience-title">
+            Support experience that helps me build more reliable software.
+          </h2>
+        </div>
+        <div class="role-grid">
+          <article class="role-card">
+            <h3>What I Bring</h3>
+            <ul class="role-list">
+              <li>Debugging user-facing and environment-specific issues</li>
+              <li>Support work with clear escalation and ownership</li>
+              <li>Deployment validation before and after changes</li>
+              <li>Technical documentation for repeatable fixes</li>
+              <li>A reliability mindset from real IT workflows</li>
+            </ul>
+          </article>
+          <article class="role-card">
+            <h3>Roles I Am Targeting</h3>
+            <ul class="role-list">
+              <li>Software Developer Co-op</li>
+              <li>Software Engineering Intern</li>
+              <li>Full-Stack Developer Co-op</li>
+              <li>Web Developer Co-op</li>
+              <li>Technical Analyst Intern with coding responsibilities</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2 id="projects-title">Projects I would talk through in a developer interview.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">01</p>
-          <h3>IT Ticketing System</h3>
-          <p>Full-stack support ticketing app for creating, filtering, updating, assigning, and deleting tickets with persistent MongoDB storage.</p>
-          <p class="project-impact">Shows REST API work, stateful UI, CRUD logic, and practical service workflow thinking.</p>
-          <ul class="project-tags">
-            <li>React</li>
-            <li>Vite</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://it-ticketing-system-pi.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/it-ticketing-system" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">02</p>
-          <h3>Chess Game</h3>
-          <p>Interactive chess application using Next.js and TypeScript with frontend state management, game logic, and component-based UI design.</p>
-          <p class="project-impact">Shows TypeScript, predictable state handling, and reusable UI components.</p>
-          <ul class="project-tags">
-            <li>Next.js</li>
-            <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-            <li>Vercel</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://test-chess-game-roy-kappa-five.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/Chess-Game" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3>Personal Portfolio</h3>
-          <p>Lightweight, responsive portfolio built with semantic HTML, modern CSS, and modular JavaScript.</p>
-          <p class="project-impact">Optimized for accessibility, performance, SEO, and simple deployment.</p>
-          <ul class="project-tags">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SEO</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://pramitroy.tech" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/personal-portfolio" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
+      <section
+        class="section projects"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">
+            Projects I would talk through in a developer interview.
+          </h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <h3>IT Ticketing System</h3>
+            <p>
+              Full-stack support ticketing app with role-based auth, ticket
+              workflow management, MongoDB persistence, REST API validation, and
+              CI-tested frontend/backend behavior.
+            </p>
+            <p class="project-impact">
+              Shows REST API design, stateful UI, CRUD logic, automated testing,
+              and practical service workflow thinking.
+            </p>
+            <ul class="project-tags">
+              <li>React</li>
+              <li>Vite</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Playwright</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://it-ticketing-system-pi.vercel.app"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/it-ticketing-system"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <h3>Chess Game</h3>
+            <p>
+              Interactive chess application using Next.js and TypeScript with
+              frontend state management, game logic, and component-based UI
+              design.
+            </p>
+            <p class="project-impact">
+              Shows TypeScript, predictable state handling, and reusable UI
+              components.
+            </p>
+            <ul class="project-tags">
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Vercel</li>
+            </ul>
+            <div class="project-links">
+              <a
+                href="https://test-chess-game-roy-kappa-five.vercel.app"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/Chess-Game"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <h3>Personal Portfolio</h3>
+            <p>
+              Lightweight, responsive portfolio built with semantic HTML, modern
+              CSS, and modular JavaScript.
+            </p>
+            <p class="project-impact">
+              Optimized for accessibility, performance, SEO, and simple
+              deployment.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SEO</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://pramitroy.tech" target="_blank" rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/personal-portfolio"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-panel">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Open to Fall 2026 software developer co-op roles.</h2>
-        <p>Toronto/GTA preferred. Available for software development, web development, and full-stack co-op opportunities.</p>
-        <address class="contact-links">
-          <a href="mailto:royp15@mcmaster.ca">royp15@mcmaster.ca</a>
-          <a href="https://www.linkedin.com/in/pramit-roy-338729289" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/proyneon-hub" target="_blank" rel="noopener">GitHub</a>
-        </address>
-      </div>
-    </section>
-  </main>
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-panel">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">
+            Open to Fall 2026 software developer co-op roles.
+          </h2>
+          <p>
+            Toronto/GTA preferred. Available for software development, web
+            development, and full-stack co-op opportunities.
+          </p>
+          <address class="contact-links">
+            <a href="mailto:royp15@mcmaster.ca">royp15@mcmaster.ca</a>
+            <a
+              href="https://www.linkedin.com/in/pramit-roy-338729289"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/proyneon-hub"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </address>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Pramit Roy. Software Developer Co-op profile.</p>
-  </footer>
-  <script src="script.js?v=20260629-theme-toggle" defer></script>
-</body>
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Pramit Roy. Software Developer Co-op
+        profile.
+      </p>
+    </footer>
+    <script src="script.js?v=20260629-theme-toggle" defer></script>
+  </body>
 </html>

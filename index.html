@@ -1,413 +1,751 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pramit Roy is a McMaster Software Engineering student seeking Fall 2026 co-op roles in Toronto/GTA across Software Development, QA / SDET, DevOps / IT Automation, Software Analyst, and Technical Analyst positions.">
-  <meta name="author" content="Pramit Roy">
-  <meta name="theme-color" content="#172033">
-  <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Pramit Roy | Software Engineering Co-op Candidate">
-  <meta property="og:description" content="Software Development, QA / SDET, and DevOps / IT Automation co-op candidate with 5+ years of IT systems experience.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pramitroy.tech">
-  <meta property="og:image" content="assets/profile-optimized.jpg">
-  <meta property="og:site_name" content="Pramit Roy Portfolio">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Pramit Roy | Software Engineering Co-op Candidate</title>
-  <script>
-    (() => {
-      try {
-        const storedTheme = localStorage.getItem("portfolio-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || (prefersDark ? "dark" : "light");
-        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
-      } catch {
-        document.documentElement.dataset.theme = "light";
-      }
-    })();
-  </script>
-  <link rel="stylesheet" href="styles.css?v=20260629-hiring-funnel-mobile-fix">
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Pramit Roy",
-      "jobTitle": "Software Engineering Co-op Candidate",
-      "email": "mailto:royp15@mcmaster.ca",
-      "url": "https://pramitroy.tech",
-      "sameAs": [
-        "https://www.linkedin.com/in/pramit-roy-338729289",
-        "https://github.com/proyneon-hub"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "addressCountry": "CA"
-      },
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "McMaster University"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pramit Roy is a McMaster Software Engineering student seeking Fall 2026 co-op roles in Toronto/GTA across Software Development, QA / SDET, DevOps / IT Automation, Software Analyst, and Technical Analyst positions."
+    />
+    <meta name="author" content="Pramit Roy" />
+    <meta name="theme-color" content="#172033" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      property="og:title"
+      content="Pramit Roy | Software Engineering Co-op Candidate"
+    />
+    <meta
+      property="og:description"
+      content="Software Development, QA / SDET, and DevOps / IT Automation co-op candidate with 5+ years of IT systems experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pramitroy.tech" />
+    <meta property="og:image" content="assets/profile-optimized.jpg" />
+    <meta property="og:site_name" content="Pramit Roy Portfolio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Pramit Roy | Software Engineering Co-op Candidate</title>
+    <script>
+      (() => {
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          const theme = storedTheme || (prefersDark ? "dark" : "light");
+          document.documentElement.dataset.theme =
+            theme === "dark" ? "dark" : "light";
+        } catch {
+          document.documentElement.dataset.theme = "light";
         }
-      ]
-    }
-  </script>
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+      })();
+    </script>
+    <link
+      rel="stylesheet"
+      href="styles.css?v=20260629-hiring-funnel-mobile-fix"
+    />
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="logo" href="#home" aria-label="Pramit Roy home">PR</a>
-      <button class="theme-toggle mobile-theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-        <span class="theme-toggle-track" aria-hidden="true">
-          <span class="theme-toggle-thumb"></span>
-        </span>
-      </button>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-        <span class="sr-only">Toggle navigation</span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links" id="primary-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#background-fit">Why I Fit</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="theme-control">
-          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-            <span class="theme-toggle-track" aria-hidden="true">
-              <span class="theme-toggle-thumb"></span>
-            </span>
-          </button>
-        </li>
-        <li class="nav-resume-wrapper">
-          <button class="nav-resume-btn" type="button" aria-expanded="false" aria-haspopup="menu">
-            Resumes <span class="resume-caret" aria-hidden="true">&#9662;</span>
-          </button>
-          <ul class="nav-resume-dropdown" role="menu">
-            <li role="none"><a href="assets/resume-software-developer-coop.pdf" target="_blank" rel="noopener" role="menuitem" aria-label="Download Software Development co-op resume PDF">Software Development Resume</a></li>
-            <li role="none"><a href="assets/resume-qa-automation-sdet-coop.pdf" target="_blank" rel="noopener" role="menuitem" aria-label="Download QA / SDET co-op resume PDF">QA / SDET Resume</a></li>
-            <li role="none"><a href="assets/resume-devops-cloud-it-automation-coop.pdf" target="_blank" rel="noopener" role="menuitem" aria-label="Download DevOps / IT Automation co-op resume PDF">DevOps / IT Automation Resume</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pramit Roy",
+        "jobTitle": "Software Engineering Co-op Candidate",
+        "email": "mailto:royp15@mcmaster.ca",
+        "url": "https://pramitroy.tech",
+        "sameAs": [
+          "https://www.linkedin.com/in/pramit-roy-338729289",
+          "https://github.com/proyneon-hub"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "McMaster University"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <main id="main-content">
-    <section class="hero section" id="home" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow">Fall 2026 Co-op Candidate | Toronto/GTA</p>
-        <h1 id="hero-title">Pramit Roy</h1>
-        <p class="hero-role"><span class="role-lead">Software Engineering Co-op Candidate</span><span class="role-divider"> | </span><span class="no-break">Full-Stack</span><span class="role-comma">, </span><span class="no-break">QA / SDET</span><span class="role-amp"> &amp; </span><span class="no-break role-devops">DevOps / IT Automation</span></p>
-        <p class="hero-tagline">McMaster Software Engineering student seeking Fall 2026 co-op roles in Toronto/GTA. I combine full-stack software projects with 5+ years of real IT systems experience in troubleshooting, deployment validation, documentation, and user-facing technical support.</p>
-        <ul class="hero-badges" aria-label="Hiring focus areas">
-          <li>Fall 2026 Co-op</li>
-          <li>Toronto/GTA</li>
-          <li>Software Development</li>
-          <li>QA / SDET</li>
-          <li>DevOps / IT Automation</li>
-          <li>5+ Years IT Systems Experience</li>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="logo" href="#home" aria-label="Pramit Roy home">PR</a>
+        <button
+          class="theme-toggle mobile-theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-track" aria-hidden="true">
+            <span class="theme-toggle-thumb"></span>
+          </span>
+        </button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#background-fit">Why I Fit</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="theme-control">
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to dark mode"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-track" aria-hidden="true">
+                <span class="theme-toggle-thumb"></span>
+              </span>
+            </button>
+          </li>
+          <li class="nav-resume-wrapper">
+            <button
+              class="nav-resume-btn"
+              type="button"
+              aria-expanded="false"
+              aria-haspopup="menu"
+            >
+              Resumes
+              <span class="resume-caret" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="nav-resume-dropdown" role="menu">
+              <li role="none">
+                <a
+                  href="assets/resume-software-developer-coop.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  role="menuitem"
+                  aria-label="Download Software Development co-op resume PDF"
+                  >Software Development Resume</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="assets/resume-qa-automation-sdet-coop.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  role="menuitem"
+                  aria-label="Download QA / SDET co-op resume PDF"
+                  >QA / SDET Resume</a
+                >
+              </li>
+              <li role="none">
+                <a
+                  href="assets/resume-devops-cloud-it-automation-coop.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  role="menuitem"
+                  aria-label="Download DevOps / IT Automation co-op resume PDF"
+                  >DevOps / IT Automation Resume</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#role-paths">Choose Resume</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Fall 2026 Co-op Candidate | Toronto/GTA</p>
+          <h1 id="hero-title">Pramit Roy</h1>
+          <p class="hero-role">
+            <span class="role-lead">Software Engineering Co-op Candidate</span
+            ><span class="role-divider"> | </span
+            ><span class="no-break">Full-Stack</span
+            ><span class="role-comma">, </span
+            ><span class="no-break">QA / SDET</span
+            ><span class="role-amp"> &amp; </span
+            ><span class="no-break role-devops">DevOps / IT Automation</span>
+          </p>
+          <p class="hero-tagline">
+            McMaster Software Engineering student seeking Fall 2026 co-op roles
+            in Toronto/GTA. I combine full-stack software projects with 5+ years
+            of real IT systems experience in troubleshooting, deployment
+            validation, documentation, and user-facing technical support.
+          </p>
+          <ul class="hero-badges" aria-label="Hiring focus areas">
+            <li>Fall 2026 Co-op</li>
+            <li>Toronto/GTA</li>
+            <li>Software Development</li>
+            <li>QA / SDET</li>
+            <li>DevOps / IT Automation</li>
+            <li>5+ Years IT Systems Experience</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#role-paths">Choose Resume</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+          <div
+            class="resume-quick-links"
+            aria-label="Role-specific resume downloads"
+          >
+            <a
+              href="assets/resume-software-developer-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Software Development co-op resume PDF"
+              >Software Development Resume</a
+            >
+            <a
+              href="assets/resume-qa-automation-sdet-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download QA / SDET co-op resume PDF"
+              >QA / SDET Resume</a
+            >
+            <a
+              href="assets/resume-devops-cloud-it-automation-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download DevOps / IT Automation co-op resume PDF"
+              >DevOps / IT Automation Resume</a
+            >
+          </div>
         </div>
-        <div class="resume-quick-links" aria-label="Role-specific resume downloads">
-          <a href="assets/resume-software-developer-coop.pdf" target="_blank" rel="noopener" aria-label="Download Software Development co-op resume PDF">Software Development Resume</a>
-          <a href="assets/resume-qa-automation-sdet-coop.pdf" target="_blank" rel="noopener" aria-label="Download QA / SDET co-op resume PDF">QA / SDET Resume</a>
-          <a href="assets/resume-devops-cloud-it-automation-coop.pdf" target="_blank" rel="noopener" aria-label="Download DevOps / IT Automation co-op resume PDF">DevOps / IT Automation Resume</a>
+        <div class="hero-visual">
+          <img
+            src="assets/profile-optimized.jpg"
+            alt="Portrait of Pramit Roy"
+            width="520"
+            height="520"
+            decoding="async"
+            fetchpriority="high"
+          />
         </div>
-      </div>
-      <div class="hero-visual">
-        <img src="assets/profile-optimized.jpg" alt="Portrait of Pramit Roy" width="520" height="520" decoding="async" fetchpriority="high">
-      </div>
-    </section>
+      </section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">About Me</h2>
-      </div>
-      <div class="about-grid about-grid-wide">
-        <p>I am a Software Engineering student at McMaster University looking for Fall 2026 co-op opportunities in Toronto and the GTA. My background combines software development projects with 5+ years of hands-on IT systems experience across troubleshooting, deployment validation, endpoint preparation, documentation, and user-facing technical support.</p>
-        <p>Before focusing on software engineering, I worked in technical support environments where I diagnosed hardware, software, OS, and network issues, prepared approximately 200 devices per week, supported thousands of device workflows, and trained new team members on repeatable technical processes.</p>
-        <p>That experience shapes how I build software: I care about clear workflows, reliable behavior, usable interfaces, documentation, and practical systems thinking. I am especially interested in Software Development, QA / SDET, DevOps / IT Automation, Software Analyst, and Technical Analyst co-op roles.</p>
-      </div>
-    </section>
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">About Me</h2>
+        </div>
+        <div class="about-grid about-grid-wide">
+          <p>
+            I am a Software Engineering student at McMaster University looking
+            for Fall 2026 co-op opportunities in Toronto and the GTA. My
+            background combines software development projects with 5+ years of
+            hands-on IT systems experience across troubleshooting, deployment
+            validation, endpoint preparation, documentation, and user-facing
+            technical support.
+          </p>
+          <p>
+            Before focusing on software engineering, I worked in technical
+            support environments where I diagnosed hardware, software, OS, and
+            network issues, prepared approximately 200 devices per week,
+            supported thousands of device workflows, and trained new team
+            members on repeatable technical processes.
+          </p>
+          <p>
+            That experience shapes how I build software: I care about clear
+            workflows, reliable behavior, usable interfaces, documentation, and
+            practical systems thinking. I am especially interested in Software
+            Development, QA / SDET, DevOps / IT Automation, Software Analyst,
+            and Technical Analyst co-op roles.
+          </p>
+        </div>
+      </section>
 
-    <section class="section role-fit" id="role-paths" aria-labelledby="role-paths-title">
-      <div class="section-heading">
-        <p class="eyebrow">Resumes</p>
-        <h2 id="role-paths-title">Choose the Resume That Matches Your Role</h2>
-      </div>
-      <div class="role-grid role-path-grid">
-        <article class="role-card role-path-card">
-          <p class="path-label">Path 1</p>
-          <h3>Software Development Co-op</h3>
-          <p class="card-intro"><strong>Best for:</strong> Software Developer, Software Engineering Intern, Full-Stack Developer, Web Developer, Frontend Developer, Backend Developer.</p>
+      <section
+        class="section role-fit"
+        id="role-paths"
+        aria-labelledby="role-paths-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Resumes</p>
+          <h2 id="role-paths-title">
+            Choose the Resume That Matches Your Role
+          </h2>
+        </div>
+        <div class="role-grid role-path-grid">
+          <article class="role-card role-path-card">
+            <p class="path-label">Path 1</p>
+            <h3>Software Development Co-op</h3>
+            <p class="card-intro">
+              <strong>Best for:</strong> Software Developer, Software
+              Engineering Intern, Full-Stack Developer, Web Developer, Frontend
+              Developer, Backend Developer.
+            </p>
+            <ul class="role-list">
+              <li>React, Next.js, JavaScript, TypeScript</li>
+              <li>Node.js, Express, MongoDB, REST APIs</li>
+              <li>
+                Debugging and documentation habits from real IT support work
+              </li>
+              <li>Projects: IT Ticketing System, Chess Game, Portfolio</li>
+            </ul>
+            <a
+              class="btn primary"
+              href="assets/resume-software-developer-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Software Development co-op resume PDF"
+              >Download Software Development Resume</a
+            >
+          </article>
+          <article class="role-card role-path-card">
+            <p class="path-label">Path 2</p>
+            <h3>QA Automation / SDET Co-op</h3>
+            <p class="card-intro">
+              <strong>Best for:</strong> QA Automation, Software Developer in
+              Test, Test Automation, Software Analyst, Systems QA, Application
+              QA Analyst.
+            </p>
+            <ul class="role-list">
+              <li>Issue isolation</li>
+              <li>Root-cause troubleshooting</li>
+              <li>Validation checks and reproducible defect thinking</li>
+              <li>Deployment/device testing and documentation</li>
+            </ul>
+            <a
+              class="btn primary"
+              href="assets/resume-qa-automation-sdet-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download QA / SDET co-op resume PDF"
+              >Download QA / SDET Resume</a
+            >
+          </article>
+          <article class="role-card role-path-card">
+            <p class="path-label">Path 3</p>
+            <h3>DevOps / IT Automation Co-op</h3>
+            <p class="card-intro">
+              <strong>Best for:</strong> DevOps / IT Automation, Technical
+              Analyst, Systems Analyst, Infrastructure Analyst, Application
+              Support Analyst.
+            </p>
+            <ul class="role-list">
+              <li>Deployment validation and systems reliability</li>
+              <li>Linux, Bash/Shell scripting, CLI, Git</li>
+              <li>Network fundamentals and troubleshooting</li>
+              <li>
+                Projects: Enterprise Network Design, IT Ticketing System,
+                Portfolio
+              </li>
+            </ul>
+            <a
+              class="btn primary"
+              href="assets/resume-devops-cloud-it-automation-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download DevOps / IT Automation co-op resume PDF"
+              >Download DevOps / IT Automation Resume</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section skills"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Skills I can speak to in interviews.</h2>
+        </div>
+        <div class="skills-grid" aria-label="Technical skills by role path">
+          <article class="skill-group">
+            <h3>Software Development</h3>
+            <ul class="skill-list">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>REST APIs</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>QA / Testing</h3>
+            <ul class="skill-list">
+              <li>Debugging</li>
+              <li>Issue Isolation</li>
+              <li>Root-Cause Troubleshooting</li>
+              <li>Validation Checks</li>
+              <li>Regression Thinking</li>
+              <li>Defect Documentation</li>
+              <li>Browser DevTools</li>
+              <li>User Workflow Testing</li>
+              <li>Documentation</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>DevOps / Systems</h3>
+            <ul class="skill-list">
+              <li>Linux</li>
+              <li>Bash/Shell Scripting</li>
+              <li>CLI</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Deployment Validation</li>
+              <li>Network Fundamentals</li>
+              <li>VLANs</li>
+              <li>OSPF</li>
+              <li>ACLs</li>
+              <li>Cisco Packet Tracer</li>
+              <li>Technical Documentation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section projects"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">
+            Projects that show how I build and solve problems.
+          </h2>
+        </div>
+        <div class="project-grid project-grid-wide">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <h3>IT Ticketing System</h3>
+            <ul
+              class="project-tags"
+              aria-label="IT Ticketing System role relevance and technologies"
+            >
+              <li>Full-Stack</li>
+              <li>QA Automation</li>
+              <li>Support Ops</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Playwright</li>
+              <li>Python</li>
+            </ul>
+            <p>
+              A full-stack support ticketing app with role-based demo auth,
+              ticket lifecycle workflows, MongoDB storage, automated QA
+              coverage, and a Python support-ops automation lab for health
+              checks and incident reporting.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                Role-based ticket lifecycle with pagination, sorting, SLA
+                visibility, export, and activity history
+              </li>
+              <li>
+                REST API validation with Jest / Supertest plus Playwright
+                end-to-end regression coverage
+              </li>
+              <li>
+                Dedicated QA Automation lab covering API, UI, permissions, and
+                accessibility test suites
+              </li>
+              <li>
+                Support Ops lab with Python health checks, synthetic login
+                checks, Markdown reports, runbooks, and scheduled GitHub Actions
+                monitoring
+              </li>
+            </ul>
+            <div class="project-links" aria-label="IT Ticketing System links">
+              <a
+                href="https://it-ticketing-system-pi.vercel.app"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/it-ticketing-system"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <h3>Chess Game</h3>
+            <ul
+              class="project-tags"
+              aria-label="Chess Game role relevance and technologies"
+            >
+              <li>Frontend</li>
+              <li>TypeScript</li>
+              <li>State Management</li>
+              <li>UI Testing Surface</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+            <p>
+              An interactive browser-based chess application using Next.js,
+              TypeScript, Tailwind CSS, component-based UI design, and frontend
+              state management.
+            </p>
+            <ul class="project-highlights">
+              <li>Predictable frontend state handling</li>
+              <li>Reusable component structure</li>
+              <li>User interaction and game-rule behavior</li>
+              <li>
+                Useful for frontend, software developer, and QA validation
+                conversations
+              </li>
+            </ul>
+            <div class="project-links" aria-label="Chess Game links">
+              <a
+                href="https://test-chess-game-roy-kappa-five.vercel.app"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/Chess-Game"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <h3>Enterprise Network Design</h3>
+            <ul
+              class="project-tags"
+              aria-label="Enterprise Network Design role relevance and technologies"
+            >
+              <li>Networking</li>
+              <li>Systems</li>
+              <li>Validation</li>
+              <li>Cisco Packet Tracer</li>
+              <li>VLANs</li>
+              <li>OSPF</li>
+              <li>ACLs</li>
+            </ul>
+            <p>
+              A secure multi-site enterprise network design using VLAN
+              segmentation, 802.1Q trunking, OSPF routing, and ACLs, with
+              connectivity validation and blocked-path testing.
+            </p>
+            <ul class="project-highlights">
+              <li>Network segmentation and routing configuration</li>
+              <li>Access control and restricted traffic validation</li>
+              <li>Documentation of expected and blocked paths</li>
+              <li>
+                Relevant to DevOps, systems analyst, technical analyst, and QA
+                validation roles
+              </li>
+            </ul>
+            <div
+              class="project-links"
+              aria-label="Enterprise Network Design links"
+            >
+              <a
+                href="https://github.com/proyneon-hub/enterprise-network-design"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">04</p>
+            <h3>Personal Portfolio</h3>
+            <ul
+              class="project-tags"
+              aria-label="Personal Portfolio role relevance and technologies"
+            >
+              <li>Frontend</li>
+              <li>Accessibility</li>
+              <li>Performance</li>
+              <li>SEO</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <p>
+              A lightweight, accessible portfolio site built with semantic HTML,
+              modern CSS, modular JavaScript, SEO metadata, and simple
+              deployment.
+            </p>
+            <ul class="project-highlights">
+              <li>Accessible and responsive layout</li>
+              <li>SEO metadata</li>
+              <li>Fast static deployment</li>
+              <li>Clear resume links for different co-op role types</li>
+            </ul>
+            <div class="project-links" aria-label="Personal Portfolio links">
+              <a href="https://pramitroy.tech" target="_blank" rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/personal-portfolio"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section role-fit"
+        id="background-fit"
+        aria-labelledby="background-fit-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">How It Connects</p>
+          <h2 id="background-fit-title">Why My Background Fits Co-op Roles</h2>
+        </div>
+        <div class="role-grid role-path-grid">
+          <article class="role-card">
+            <h3>Software Development</h3>
+            <p class="card-intro">
+              My software projects show practical full-stack and frontend
+              development using React, Next.js, TypeScript, Node.js, Express,
+              MongoDB, REST APIs, HTML, CSS, and JavaScript. My IT background
+              helps me debug carefully, document clearly, and think about real
+              users.
+            </p>
+          </article>
+          <article class="role-card">
+            <h3>QA / SDET</h3>
+            <p class="card-intro">
+              In IT support, I spent a lot of time isolating issues, reproducing
+              failures, validating fixes, documenting patterns, and checking
+              whether systems behaved as expected. That experience maps
+              naturally to QA, software testing, SDET, and software analyst
+              work.
+            </p>
+          </article>
+          <article class="role-card">
+            <h3>DevOps / IT Automation</h3>
+            <p class="card-intro">
+              My systems experience includes endpoint deployment, imaging,
+              configuration, network troubleshooting, deployment validation, and
+              repeatable technical documentation. That gives me a practical
+              foundation for DevOps / IT Automation, Systems Analyst, and
+              Technical Analyst co-op roles.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="section role-fit"
+        id="currently-improving"
+        aria-labelledby="currently-improving-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">Currently Improving</p>
+          <h2 id="currently-improving-title">What I am working on next.</h2>
+        </div>
+        <div class="role-card improvement-card">
+          <p class="card-intro">
+            I am continuing to improve my projects with stronger automation
+            coverage, clearer support documentation, CI/CD practice, and
+            deployment validation.
+          </p>
           <ul class="role-list">
-            <li>React, Next.js, JavaScript, TypeScript</li>
-            <li>Node.js, Express, MongoDB, REST APIs</li>
-            <li>Debugging and documentation habits from real IT support work</li>
-            <li>Projects: IT Ticketing System, Chess Game, Portfolio</li>
+            <li>
+              Expanding the IT Ticketing System with QA Automation and Support
+              Ops Automation labs
+            </li>
+            <li>
+              Adding role-based evidence for QA / SDET, software development,
+              and IT automation interviews
+            </li>
+            <li>
+              Improving project READMEs with setup, troubleshooting, and runbook
+              notes
+            </li>
+            <li>Exploring CI/CD and containerized deployment workflows</li>
           </ul>
-          <a class="btn primary" href="assets/resume-software-developer-coop.pdf" target="_blank" rel="noopener" aria-label="Download Software Development co-op resume PDF">Download Software Development Resume</a>
-        </article>
-        <article class="role-card role-path-card">
-          <p class="path-label">Path 2</p>
-          <h3>QA Automation / SDET Co-op</h3>
-          <p class="card-intro"><strong>Best for:</strong> QA Automation, Software Developer in Test, Test Automation, Software Analyst, Systems QA, Application QA Analyst.</p>
-          <ul class="role-list">
-            <li>Issue isolation</li>
-            <li>Root-cause troubleshooting</li>
-            <li>Validation checks and reproducible defect thinking</li>
-            <li>Deployment/device testing and documentation</li>
-          </ul>
-          <a class="btn primary" href="assets/resume-qa-automation-sdet-coop.pdf" target="_blank" rel="noopener" aria-label="Download QA / SDET co-op resume PDF">Download QA / SDET Resume</a>
-        </article>
-        <article class="role-card role-path-card">
-          <p class="path-label">Path 3</p>
-          <h3>DevOps / IT Automation Co-op</h3>
-          <p class="card-intro"><strong>Best for:</strong> DevOps / IT Automation, Technical Analyst, Systems Analyst, Infrastructure Analyst, Application Support Analyst.</p>
-          <ul class="role-list">
-            <li>Deployment validation and systems reliability</li>
-            <li>Linux, Bash/Shell scripting, CLI, Git</li>
-            <li>Network fundamentals and troubleshooting</li>
-            <li>Projects: Enterprise Network Design, IT Ticketing System, Portfolio</li>
-          </ul>
-          <a class="btn primary" href="assets/resume-devops-cloud-it-automation-coop.pdf" target="_blank" rel="noopener" aria-label="Download DevOps / IT Automation co-op resume PDF">Download DevOps / IT Automation Resume</a>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="section skills" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading">
-        <p class="eyebrow">Skills</p>
-        <h2 id="skills-title">Skills I can speak to in interviews.</h2>
-      </div>
-      <div class="skills-grid" aria-label="Technical skills by role path">
-        <article class="skill-group">
-          <h3>Software Development</h3>
-          <ul class="skill-list">
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>REST APIs</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </article>
-        <article class="skill-group">
-          <h3>QA / Testing</h3>
-          <ul class="skill-list">
-            <li>Debugging</li>
-            <li>Issue Isolation</li>
-            <li>Root-Cause Troubleshooting</li>
-            <li>Validation Checks</li>
-            <li>Regression Thinking</li>
-            <li>Defect Documentation</li>
-            <li>Browser DevTools</li>
-            <li>User Workflow Testing</li>
-            <li>Documentation</li>
-          </ul>
-        </article>
-        <article class="skill-group">
-          <h3>DevOps / Systems</h3>
-          <ul class="skill-list">
-            <li>Linux</li>
-            <li>Bash/Shell Scripting</li>
-            <li>CLI</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Deployment Validation</li>
-            <li>Network Fundamentals</li>
-            <li>VLANs</li>
-            <li>OSPF</li>
-            <li>ACLs</li>
-            <li>Cisco Packet Tracer</li>
-            <li>Technical Documentation</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-panel">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">
+            Open to Fall 2026 co-op roles in Toronto/GTA.
+          </h2>
+          <p>
+            I am open to Fall 2026 co-op roles in Toronto/GTA across Software
+            Development, QA / SDET, DevOps / IT Automation, Software Analyst,
+            and Technical Analyst positions.
+          </p>
+          <address class="contact-links">
+            <a href="mailto:royp15@mcmaster.ca">royp15@mcmaster.ca</a>
+            <a
+              href="https://www.linkedin.com/in/pramit-roy-338729289"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/proyneon-hub"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              href="assets/resume-software-developer-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Software Development co-op resume PDF"
+              >Software Development Resume</a
+            >
+            <a
+              href="assets/resume-qa-automation-sdet-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download QA / SDET co-op resume PDF"
+              >QA / SDET Resume</a
+            >
+            <a
+              href="assets/resume-devops-cloud-it-automation-coop.pdf"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download DevOps / IT Automation co-op resume PDF"
+              >DevOps / IT Automation Resume</a
+            >
+          </address>
+        </div>
+      </section>
+    </main>
 
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2 id="projects-title">Projects that show how I build and solve problems.</h2>
-      </div>
-      <div class="project-grid project-grid-wide">
-        <article class="project-card">
-          <p class="project-number">01</p>
-          <h3>IT Ticketing System</h3>
-          <ul class="project-tags" aria-label="IT Ticketing System role relevance and technologies">
-            <li>Full-Stack</li>
-            <li>QA Workflow</li>
-            <li>IT Operations</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-          </ul>
-          <p>A full-stack support ticketing app for creating, filtering, assigning, updating, and deleting tickets with persistent MongoDB storage. I built it around the kinds of support workflows I have worked with in real IT environments.</p>
-          <ul class="project-highlights">
-            <li>CRUD ticket lifecycle with persistent storage</li>
-            <li>REST API integration with React UI</li>
-            <li>Status, assignment, and filtering workflows</li>
-            <li>Relevant to Software Development, QA / SDET, Software Analyst, and IT operations roles</li>
-          </ul>
-          <div class="project-links" aria-label="IT Ticketing System links">
-            <a href="https://it-ticketing-system-pi.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/it-ticketing-system" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">02</p>
-          <h3>Chess Game</h3>
-          <ul class="project-tags" aria-label="Chess Game role relevance and technologies">
-            <li>Frontend</li>
-            <li>TypeScript</li>
-            <li>State Management</li>
-            <li>UI Testing Surface</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-          </ul>
-          <p>An interactive browser-based chess application using Next.js, TypeScript, Tailwind CSS, component-based UI design, and frontend state management.</p>
-          <ul class="project-highlights">
-            <li>Predictable frontend state handling</li>
-            <li>Reusable component structure</li>
-            <li>User interaction and game-rule behavior</li>
-            <li>Useful for frontend, software developer, and QA validation conversations</li>
-          </ul>
-          <div class="project-links" aria-label="Chess Game links">
-            <a href="https://test-chess-game-roy-kappa-five.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/Chess-Game" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3>Enterprise Network Design</h3>
-          <ul class="project-tags" aria-label="Enterprise Network Design role relevance and technologies">
-            <li>Networking</li>
-            <li>Systems</li>
-            <li>Validation</li>
-            <li>Cisco Packet Tracer</li>
-            <li>VLANs</li>
-            <li>OSPF</li>
-            <li>ACLs</li>
-          </ul>
-          <p>A secure multi-site enterprise network design using VLAN segmentation, 802.1Q trunking, OSPF routing, and ACLs, with connectivity validation and blocked-path testing.</p>
-          <ul class="project-highlights">
-            <li>Network segmentation and routing configuration</li>
-            <li>Access control and restricted traffic validation</li>
-            <li>Documentation of expected and blocked paths</li>
-            <li>Relevant to DevOps, systems analyst, technical analyst, and QA validation roles</li>
-          </ul>
-          <div class="project-links" aria-label="Enterprise Network Design links">
-            <a href="https://github.com/proyneon-hub/enterprise-network-design" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <p class="project-number">04</p>
-          <h3>Personal Portfolio</h3>
-          <ul class="project-tags" aria-label="Personal Portfolio role relevance and technologies">
-            <li>Frontend</li>
-            <li>Accessibility</li>
-            <li>Performance</li>
-            <li>SEO</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <p>A lightweight, accessible portfolio site built with semantic HTML, modern CSS, modular JavaScript, SEO metadata, and simple deployment.</p>
-          <ul class="project-highlights">
-            <li>Accessible and responsive layout</li>
-            <li>SEO metadata</li>
-            <li>Fast static deployment</li>
-            <li>Clear resume links for different co-op role types</li>
-          </ul>
-          <div class="project-links" aria-label="Personal Portfolio links">
-            <a href="https://pramitroy.tech" target="_blank" rel="noopener">Live Demo</a>
-            <a href="https://github.com/proyneon-hub/personal-portfolio" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Pramit Roy. All rights reserved.</p>
+    </footer>
 
-    <section class="section role-fit" id="background-fit" aria-labelledby="background-fit-title">
-      <div class="section-heading">
-        <p class="eyebrow">How It Connects</p>
-        <h2 id="background-fit-title">Why My Background Fits Co-op Roles</h2>
-      </div>
-      <div class="role-grid role-path-grid">
-        <article class="role-card">
-          <h3>Software Development</h3>
-          <p class="card-intro">My software projects show practical full-stack and frontend development using React, Next.js, TypeScript, Node.js, Express, MongoDB, REST APIs, HTML, CSS, and JavaScript. My IT background helps me debug carefully, document clearly, and think about real users.</p>
-        </article>
-        <article class="role-card">
-          <h3>QA / SDET</h3>
-          <p class="card-intro">In IT support, I spent a lot of time isolating issues, reproducing failures, validating fixes, documenting patterns, and checking whether systems behaved as expected. That experience maps naturally to QA, software testing, SDET, and software analyst work.</p>
-        </article>
-        <article class="role-card">
-          <h3>DevOps / IT Automation</h3>
-          <p class="card-intro">My systems experience includes endpoint deployment, imaging, configuration, network troubleshooting, deployment validation, and repeatable technical documentation. That gives me a practical foundation for DevOps / IT Automation, Systems Analyst, and Technical Analyst co-op roles.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section role-fit" id="currently-improving" aria-labelledby="currently-improving-title">
-      <div class="section-heading">
-        <p class="eyebrow">Currently Improving</p>
-        <h2 id="currently-improving-title">What I am working on next.</h2>
-      </div>
-      <div class="role-card improvement-card">
-        <p class="card-intro">I am continuing to improve my projects with clearer testing notes, UI coverage, CI/CD practice, and better deployment documentation.</p>
-        <ul class="role-list">
-          <li>Adding API test documentation for the IT Ticketing System</li>
-          <li>Expanding QA test cases for frontend workflows</li>
-          <li>Improving project READMEs with setup and troubleshooting notes</li>
-          <li>Exploring CI/CD and containerized deployment workflows</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact-panel">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Open to Fall 2026 co-op roles in Toronto/GTA.</h2>
-        <p>I am open to Fall 2026 co-op roles in Toronto/GTA across Software Development, QA / SDET, DevOps / IT Automation, Software Analyst, and Technical Analyst positions.</p>
-        <address class="contact-links">
-          <a href="mailto:royp15@mcmaster.ca">royp15@mcmaster.ca</a>
-          <a href="https://www.linkedin.com/in/pramit-roy-338729289" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/proyneon-hub" target="_blank" rel="noopener">GitHub</a>
-          <a href="assets/resume-software-developer-coop.pdf" target="_blank" rel="noopener" aria-label="Download Software Development co-op resume PDF">Software Development Resume</a>
-          <a href="assets/resume-qa-automation-sdet-coop.pdf" target="_blank" rel="noopener" aria-label="Download QA / SDET co-op resume PDF">QA / SDET Resume</a>
-          <a href="assets/resume-devops-cloud-it-automation-coop.pdf" target="_blank" rel="noopener" aria-label="Download DevOps / IT Automation co-op resume PDF">DevOps / IT Automation Resume</a>
-        </address>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Pramit Roy. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js?v=20260629-theme-toggle" defer></script>
-</body>
+    <script src="script.js?v=20260629-theme-toggle" defer></script>
+  </body>
 </html>
