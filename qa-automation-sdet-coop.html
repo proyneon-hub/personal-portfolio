@@ -19,7 +19,18 @@
       content="QA / SDET profile for full-time and co-op roles with issue isolation, root-cause troubleshooting, deployment validation, documentation, and software project experience."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/profile-optimized.jpg" />
+    <meta
+      property="og:url"
+      content="https://pramitroy.vercel.app/qa-automation-sdet-coop"
+    />
+    <meta
+      property="og:image"
+      content="https://pramitroy.vercel.app/assets/profile-optimized.jpg"
+    />
+    <link
+      rel="canonical"
+      href="https://pramitroy.vercel.app/qa-automation-sdet-coop"
+    />
     <title>Pramit Roy | QA Automation / SDET — Full-Time & Co-op</title>
     <script>
       (() => {
@@ -166,9 +177,12 @@
           <h2 id="skills-title">Quality-focused skills I can speak to.</h2>
         </div>
         <ul class="priority-skills" aria-label="Priority QA and SDET skills">
+          <li>Playwright</li>
+          <li>Vitest</li>
+          <li>API and Contract Testing</li>
+          <li>Axe Accessibility</li>
+          <li>k6 Load Testing</li>
           <li>Testing</li>
-          <li>Validation Checks</li>
-          <li>Issue Isolation</li>
           <li>Root-Cause Troubleshooting</li>
           <li>Deployment Validation</li>
           <li>Python</li>
@@ -231,23 +245,25 @@
             <p class="project-number">01</p>
             <h3>IT Ticketing System</h3>
             <p>
-              Full-stack ticket workflow with a dedicated QA Automation lab
-              covering API tests, Playwright browser flows, role permissions,
-              and accessibility checks.
+              A role-based IT service desk tested in six layers: 723 automated
+              tests covering the API on a real in-memory MongoDB, OpenAPI
+              contract checks, mocked and real-stack Playwright runs in three
+              browsers, Axe accessibility, and Python monitoring scripts.
             </p>
             <p class="project-impact">
-              Useful for QA conversations: test strategy, traceability, bug
-              reports, regression coverage, auth validation, and role-based edge
-              cases.
+              Useful for QA conversations: a written test strategy, 22 defects
+              each pinned by a regression test that fails without the fix,
+              coverage thresholds enforced in CI, and a live smoke suite that
+              caught three failures only the deployed site showed.
             </p>
             <ul class="project-tags">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
               <li>Playwright</li>
-              <li>API Testing</li>
-              <li>Accessibility</li>
+              <li>Vitest</li>
+              <li>Supertest</li>
+              <li>Axe</li>
+              <li>OpenAPI</li>
+              <li>k6</li>
+              <li>GitHub Actions</li>
             </ul>
             <div class="project-links">
               <a
@@ -255,6 +271,18 @@
                 target="_blank"
                 rel="noopener"
                 >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/it-ticketing-system/blob/main/docs/DEFECT_LOG.md"
+                target="_blank"
+                rel="noopener"
+                >Defect Log</a
+              >
+              <a
+                href="https://proyneon-hub.github.io/it-ticketing-system/"
+                target="_blank"
+                rel="noopener"
+                >Test Reports</a
               >
               <a
                 href="https://github.com/proyneon-hub/it-ticketing-system"
@@ -268,18 +296,23 @@
             <p class="project-number">02</p>
             <h3>Chess Game</h3>
             <p>
-              Interactive Next.js and TypeScript app with frontend state
-              management and game logic.
+              Next.js and TypeScript chess with computer and private online
+              play, verified by 267 unit and integration tests and 28
+              Playwright browser tests.
             </p>
             <p class="project-impact">
-              A useful QA surface for rule validation, UI state, input
-              sequences, and browser behavior.
+              Useful for QA conversations: real MongoDB concurrency tests,
+              seeded replay fingerprints that fail a behavior-changing
+              refactor, perft move-generation checks, Axe scans on every pull
+              request, and a 1,000-game simulation that checks for invalid
+              states.
             </p>
             <ul class="project-tags">
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>State Logic</li>
-              <li>UI Validation</li>
+              <li>Vitest</li>
+              <li>Playwright</li>
+              <li>Axe</li>
+              <li>Seeded Replays</li>
+              <li>Simulation</li>
             </ul>
             <div class="project-links">
               <a
@@ -333,8 +366,8 @@
         <div class="contact-panel">
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">
-            Open to full-time and Fall 2026 co-op QA Automation, SDET, and
-            Software Analyst roles.
+            Open to full-time and co-op QA Automation, SDET, and Software
+            Analyst roles.
           </h2>
           <p>
             Toronto/GTA preferred. Interested in test automation, software

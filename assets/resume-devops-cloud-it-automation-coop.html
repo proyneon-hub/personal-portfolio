@@ -15,20 +15,20 @@
       <span>royp15@mcmaster.ca</span>
       <a href="https://www.linkedin.com/in/pramit-roy-338729289">linkedin.com/in/pramit-roy-338729289</a>
       <a href="https://github.com/proyneon-hub">github.com/proyneon-hub</a>
-      <a href="https://pramitroy.tech">pramitroy.tech</a>
+      <a href="https://pramitroy.vercel.app">pramitroy.vercel.app</a>
     </div>
   </header>
 
   <section class="section">
     <h2>Summary</h2>
-    <p class="summary">DevOps / IT Automation and systems-focused candidate with software engineering coursework, full-stack projects, and 5+ years of IT systems experience. Brings practical strengths in troubleshooting, deployment validation, technical documentation, production support, network fundamentals, and systems reliability. Open to full-time and Fall 2026 co-op roles in DevOps / IT Automation, systems analysis, technical analysis, or cloud-adjacent operations.</p>
+    <p class="summary">DevOps / IT Automation and systems-focused candidate with software engineering coursework, full-stack projects, and 5+ years of IT systems experience. Brings practical strengths in troubleshooting, deployment validation, technical documentation, production support, network fundamentals, and systems reliability. Open to full-time and co-op roles in DevOps / IT Automation, systems analysis, technical analysis, or cloud-adjacent operations.</p>
   </section>
 
   <section class="section">
     <h2>Technical Skills</h2>
     <div class="skills">
       <p><strong>Systems &amp; Automation:</strong> Linux, Bash/Shell Scripting, CLI, Git, GitHub, Deployment Validation</p>
-      <p><strong>DevOps Concepts:</strong> CI/CD Concepts, Monitoring Concepts, Runbook Documentation, Release Validation</p>
+      <p><strong>DevOps Tooling:</strong> GitHub Actions, Docker, GHCR, Prometheus, Grafana, CodeQL, Runbook Documentation, Release Validation</p>
       <p><strong>Networking:</strong> VLANs, OSPF, ACLs, Cisco Packet Tracer, Network Diagnostics</p>
       <p><strong>Programming/Scripting:</strong> Python, JavaScript, SQL</p>
       <p><strong>Web/Backend:</strong> Node.js, Express, REST APIs, MongoDB</p>
@@ -53,13 +53,13 @@
     <article class="item">
       <div class="item-heading">
         <span>IT Ticketing System</span>
-        <span>React, Node.js, Express, MongoDB</span>
+        <span>Docker, GitHub Actions, Prometheus, Python, MongoDB</span>
       </div>
       <p class="subheading">Live: <a href="https://it-ticketing-system-pi.vercel.app">it-ticketing-system-pi.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/it-ticketing-system">github.com/proyneon-hub/it-ticketing-system</a></p>
       <ul>
-        <li>Built a full-stack service workflow app with ticket lifecycle logic, filtering, assignment, and persistent storage.</li>
-        <li>Connected application development to incident, support, troubleshooting, and service-management workflows.</li>
-        <li>Implemented REST API behavior and UI flows suitable for release validation and workflow automation discussions.</li>
+        <li>Built a role-based service desk with a staged GitHub Actions pipeline (lint, unit, integration, browser and real-stack smoke tests, Docker image to GHCR, then an approval-gated smoke test of the deployed site) plus CodeQL and Dependabot.</li>
+        <li>Added request IDs that trace a user-facing error to a log line, Prometheus metrics with a provisioned Grafana dashboard, health and readiness probes, and a runbook.</li>
+        <li>Wrote Python tooling that checks the live site hourly and opens an incident issue on failure, closing it on recovery; logged 22 defects, three found only on the deployed site.</li>
       </ul>
     </article>
     <article class="item">
@@ -67,9 +67,9 @@
         <span>Personal Portfolio</span>
         <span>HTML, CSS, JavaScript</span>
       </div>
-      <p class="subheading">Live: <a href="https://pramitroy.tech">pramitroy.tech</a> | GitHub: <a href="https://github.com/proyneon-hub/personal-portfolio">github.com/proyneon-hub/personal-portfolio</a></p>
+      <p class="subheading">Live: <a href="https://pramitroy.vercel.app">pramitroy.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/personal-portfolio">github.com/proyneon-hub/personal-portfolio</a></p>
       <ul>
-        <li>Built a lightweight static site optimized for accessibility, performance, SEO, simple deployment, and maintainability.</li>
+        <li>Built a lightweight static site optimized for accessibility, performance, and SEO, deployed on Vercel from GitHub with security headers and cache rules.</li>
       </ul>
     </article>
   </section>
@@ -117,7 +117,7 @@
           <span>McMaster University</span>
           <span>Expected 2028</span>
         </div>
-        <p class="subheading">B.Tech in Software Engineering | Full-Time &amp; Fall 2026 Co-op Candidate</p>
+        <p class="subheading">B.Tech in Software Engineering | Full-Time &amp; Co-op Candidate</p>
       </article>
     </div>
     <div>

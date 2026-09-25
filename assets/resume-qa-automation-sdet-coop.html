@@ -15,22 +15,22 @@
       <span>royp15@mcmaster.ca</span>
       <a href="https://www.linkedin.com/in/pramit-roy-338729289">linkedin.com/in/pramit-roy-338729289</a>
       <a href="https://github.com/proyneon-hub">github.com/proyneon-hub</a>
-      <a href="https://pramitroy.tech">pramitroy.tech</a>
+      <a href="https://pramitroy.vercel.app">pramitroy.vercel.app</a>
     </div>
   </header>
 
   <section class="section">
     <h2>Summary</h2>
-    <p class="summary">QA / SDET candidate with software project experience and 5+ years of IT systems background. Experienced in issue isolation, root-cause troubleshooting, deployment validation, documentation, process adherence, and device testing. Open to full-time and Fall 2026 co-op QA / SDET, test automation, Software Analyst, or systems QA roles in Toronto/GTA.</p>
+    <p class="summary">QA / SDET candidate with software project experience and 5+ years of IT systems background. Experienced in issue isolation, root-cause troubleshooting, deployment validation, documentation, process adherence, and device testing. Open to full-time and co-op QA / SDET, test automation, Software Analyst, or systems QA roles in Toronto/GTA.</p>
   </section>
 
   <section class="section">
     <h2>Technical Skills</h2>
     <div class="skills">
-      <p><strong>Testing &amp; QA:</strong> Test Cases, Bug Reports, Reproduction Steps, Regression Thinking, Validation Checks, Defect Documentation</p>
+      <p><strong>Testing &amp; QA:</strong> Playwright, Vitest, Supertest, Axe Accessibility, OpenAPI Contract Testing, k6, Test Plans, Bug Reports, Regression Testing</p>
       <p><strong>Languages:</strong> Python, JavaScript, TypeScript, SQL, Java</p>
       <p><strong>Web/API:</strong> REST APIs, React, Next.js, Node.js, Express, MongoDB, HTML/CSS</p>
-      <p><strong>Tools:</strong> Git, GitHub, Browser DevTools, CLI, Documentation</p>
+      <p><strong>Tools:</strong> Git, GitHub Actions, Docker, Browser DevTools, CLI, Documentation</p>
       <p><strong>Systems:</strong> Device Testing, Deployment Validation, Network Fundamentals, Troubleshooting</p>
     </div>
   </section>
@@ -40,24 +40,24 @@
     <article class="item">
       <div class="item-heading">
         <span>IT Ticketing System</span>
-        <span>React, Node.js, Express, MongoDB</span>
+        <span>TypeScript, React, Express, MongoDB, Playwright</span>
       </div>
       <p class="subheading">Live: <a href="https://it-ticketing-system-pi.vercel.app">it-ticketing-system-pi.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/it-ticketing-system">github.com/proyneon-hub/it-ticketing-system</a></p>
       <ul>
-        <li>Built a full-stack ticket workflow with create, filter, update, assign, delete, and persistent storage behavior.</li>
-        <li>Designed flows that support test scenarios around ticket status transitions, form behavior, API behavior, and filtering.</li>
-        <li>Applied service-management context to think through user workflows, edge cases, reproducibility, and defect reports.</li>
+        <li>Built and tested a role-based service desk with 723 automated tests in six layers: API on a real in-memory MongoDB, OpenAPI contract, mocked and real-stack Playwright in Chromium, Firefox, and WebKit, Axe accessibility, and pytest. Coverage is 96.7% API and 93.6% client, enforced in CI.</li>
+        <li>Logged 22 defects, each with a written root cause and a regression test that fails without the fix, including a mock-versus-real mismatch and three failures that only the deployed site exposed.</li>
+        <li>Added a staged GitHub Actions pipeline with CodeQL, a post-deploy smoke test, and an hourly live check that opens and closes incident issues.</li>
       </ul>
     </article>
     <article class="item">
       <div class="item-heading">
         <span>Chess Game</span>
-        <span>Next.js, TypeScript, Tailwind CSS</span>
+        <span>Next.js, TypeScript, MongoDB, Vitest, Playwright</span>
       </div>
       <p class="subheading">Live: <a href="https://test-chess-game-roy-kappa-five.vercel.app">test-chess-game-roy-kappa-five.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/Chess-Game">github.com/proyneon-hub/Chess-Game</a></p>
       <ul>
-        <li>Developed an interactive browser-based app with frontend state management, game-rule behavior, and reusable components.</li>
-        <li>Created a useful QA surface for validating UI state, user input sequences, rule behavior, and component interactions.</li>
+        <li>Tested a full-stack chess game with 267 unit and integration tests (including real MongoDB concurrency, perft move generation, and seeded replay fingerprints) and 28 Playwright browser tests with Axe scans on every pull request.</li>
+        <li>Used a seeded 1,000-game simulation and playtest harness to check for invalid states and tune behavior from measurements.</li>
       </ul>
     </article>
     <article class="item">
@@ -115,7 +115,7 @@
           <span>McMaster University</span>
           <span>Expected 2028</span>
         </div>
-        <p class="subheading">B.Tech in Software Engineering | Full-Time &amp; Fall 2026 Co-op Candidate</p>
+        <p class="subheading">B.Tech in Software Engineering | Full-Time &amp; Co-op Candidate</p>
       </article>
     </div>
     <div>

@@ -15,13 +15,13 @@
       <span>royp15@mcmaster.ca</span>
       <a href="https://www.linkedin.com/in/pramit-roy-338729289">linkedin.com/in/pramit-roy-338729289</a>
       <a href="https://github.com/proyneon-hub">github.com/proyneon-hub</a>
-      <a href="https://pramitroy.tech">pramitroy.tech</a>
+      <a href="https://pramitroy.vercel.app">pramitroy.vercel.app</a>
     </div>
   </header>
 
   <section class="section">
     <h2>Summary</h2>
-    <p class="summary">Software Engineering student open to full-time and Fall 2026 co-op software developer roles in Toronto/GTA. Combines full-stack project experience with 5+ years of IT systems experience, bringing strong habits in debugging, production support, deployment validation, technical documentation, and systems reliability. Interested in building reliable, user-focused software while contributing to collaborative engineering teams.</p>
+    <p class="summary">Software Engineering student open to full-time and co-op software developer roles in Toronto/GTA. Combines full-stack project experience with 5+ years of IT systems experience, bringing strong habits in debugging, production support, deployment validation, technical documentation, and systems reliability. Interested in building reliable, user-focused software while contributing to collaborative engineering teams.</p>
   </section>
 
   <section class="section">
@@ -29,8 +29,8 @@
     <div class="skills">
       <p><strong>Languages:</strong> JavaScript, TypeScript, Python, Java, SQL, C</p>
       <p><strong>Frontend:</strong> React, Next.js, Vite, HTML5, CSS3, Tailwind CSS, Responsive Design, Accessibility</p>
-      <p><strong>Backend &amp; Data:</strong> Node.js, Express, MongoDB, REST APIs, API Design, Data Modeling</p>
-      <p><strong>Tools &amp; Practices:</strong> Git, GitHub, Debugging, Testing, Code Review, Documentation, Deployment Validation</p>
+      <p><strong>Backend &amp; Data:</strong> Node.js, Express, MongoDB, REST APIs, OpenAPI, Zod, API Design, Data Modeling</p>
+      <p><strong>Tools &amp; Practices:</strong> Git, GitHub Actions, Docker, Vitest, Playwright, Debugging, Code Review, Documentation, Deployment Validation</p>
     </div>
   </section>
 
@@ -39,24 +39,24 @@
     <article class="item">
       <div class="item-heading">
         <span>IT Ticketing System</span>
-        <span>React, Node.js, Express, MongoDB</span>
+        <span>TypeScript, React, Express, MongoDB</span>
       </div>
       <p class="subheading">Live: <a href="https://it-ticketing-system-pi.vercel.app">it-ticketing-system-pi.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/it-ticketing-system">github.com/proyneon-hub/it-ticketing-system</a></p>
       <ul>
-        <li>Built a full-stack support ticketing app for creating, filtering, assigning, updating, and deleting IT tickets.</li>
-        <li>Implemented persistent MongoDB storage, REST API integration, status workflows, assignment, and filtering logic.</li>
-        <li>Modeled real IT service workflows from support experience to create practical user and admin flows.</li>
+        <li>Built a role-based IT service desk: a layered TypeScript/Express API on MongoDB with Zod validation, a typed React client with routing and optimistic edits, and an OpenAPI 3.1 contract enforced by tests.</li>
+        <li>Implemented a workflow state machine with versioned edits, single-use rotating refresh tokens, SLA escalation, and a transactional outbox for webhook notifications; recorded eight design decisions.</li>
+        <li>Backed it with 723 automated tests (96.7% API coverage), a Dockerised stack, and a CI pipeline that smoke-tests the deployed site.</li>
       </ul>
     </article>
     <article class="item">
       <div class="item-heading">
         <span>Chess Game</span>
-        <span>Next.js, TypeScript, Tailwind CSS</span>
+        <span>Next.js, React, TypeScript, MongoDB</span>
       </div>
       <p class="subheading">Live: <a href="https://test-chess-game-roy-kappa-five.vercel.app">test-chess-game-roy-kappa-five.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/Chess-Game">github.com/proyneon-hub/Chess-Game</a></p>
       <ul>
-        <li>Developed an interactive browser chess app with component-based UI design and predictable frontend state handling.</li>
-        <li>Used TypeScript and reusable components to support maintainable user interaction and game-rule behavior.</li>
+        <li>Built a full-stack chess game on Next.js 15 and React 19 with local, computer (Easy, Normal, Advanced), and private online play sharing one deterministic rules engine.</li>
+        <li>Ran the computer search in a Web Worker and committed online moves with compare-and-swap versioning and idempotent receipts; versioned the rules so saved games keep their behavior, pinned by seeded replay tests (267 unit and 28 browser tests).</li>
       </ul>
     </article>
     <article class="item">
@@ -64,9 +64,9 @@
         <span>Personal Portfolio</span>
         <span>HTML, CSS, JavaScript</span>
       </div>
-      <p class="subheading">Live: <a href="https://pramitroy.tech">pramitroy.tech</a> | GitHub: <a href="https://github.com/proyneon-hub/personal-portfolio">github.com/proyneon-hub/personal-portfolio</a></p>
+      <p class="subheading">Live: <a href="https://pramitroy.vercel.app">pramitroy.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/personal-portfolio">github.com/proyneon-hub/personal-portfolio</a></p>
       <ul>
-        <li>Built a lightweight, accessible portfolio with semantic HTML, modern CSS, modular JavaScript, SEO metadata, and simple deployment.</li>
+        <li>Built a lightweight, accessible portfolio with semantic HTML, modern CSS, modular JavaScript, and SEO metadata, deployed on Vercel from GitHub with security headers.</li>
       </ul>
     </article>
   </section>
@@ -114,7 +114,7 @@
           <span>McMaster University</span>
           <span>Expected 2028</span>
         </div>
-        <p class="subheading">B.Tech in Software Engineering | Full-Time &amp; Fall 2026 Co-op Candidate</p>
+        <p class="subheading">B.Tech in Software Engineering | Full-Time &amp; Co-op Candidate</p>
       </article>
     </div>
     <div>

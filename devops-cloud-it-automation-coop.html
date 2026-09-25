@@ -19,7 +19,18 @@
       content="DevOps / IT Automation and Systems Analyst profile for full-time and co-op roles with IT systems experience, deployment validation, troubleshooting, documentation, and software projects."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/profile-optimized.jpg" />
+    <meta
+      property="og:url"
+      content="https://pramitroy.vercel.app/devops-cloud-it-automation-coop"
+    />
+    <meta
+      property="og:image"
+      content="https://pramitroy.vercel.app/assets/profile-optimized.jpg"
+    />
+    <link
+      rel="canonical"
+      href="https://pramitroy.vercel.app/devops-cloud-it-automation-coop"
+    />
     <title>Pramit Roy | DevOps / IT Automation / Systems Analyst — Full-Time & Co-op</title>
     <script>
       (() => {
@@ -172,16 +183,19 @@
           class="priority-skills"
           aria-label="Priority DevOps and IT automation skills"
         >
+          <li>GitHub Actions</li>
+          <li>Docker</li>
+          <li>Prometheus</li>
+          <li>Grafana</li>
           <li>Git</li>
           <li>Python</li>
           <li>Linux</li>
           <li>CLI</li>
           <li>JavaScript</li>
           <li>SQL</li>
-          <li>REST APIs</li>
           <li>Deployment Validation</li>
           <li>Production Support</li>
-          <li>Monitoring Concepts</li>
+          <li>Runbooks</li>
           <li>Technical Documentation</li>
           <li>Network Fundamentals</li>
           <li>Testing</li>
@@ -277,21 +291,26 @@
             <p class="project-number">02</p>
             <h3>IT Ticketing System</h3>
             <p>
-              Full-stack service workflow app paired with a Python Support Ops
-              Automation lab for health checks, synthetic login validation,
-              ticket API checks, and Markdown report generation.
+              A service desk built to be operated: a Dockerised
+              TypeScript/Express and React stack with Prometheus metrics, a
+              provisioned Grafana dashboard, liveness and readiness probes, and
+              a Python Support Ops tool that checks the live site, validates
+              sign-in, and writes status reports.
             </p>
             <p class="project-impact">
-              Connects application development with incident response, runbooks,
-              CI checks, scheduled monitoring, and service-management workflows.
+              A staged GitHub Actions pipeline runs lint, tests, a real-stack
+              smoke run, then publishes the image to GHCR and smoke-tests the
+              deployed site. An hourly check opens an incident issue when the
+              site fails and closes it on recovery, and a runbook traces a
+              user's error reference to a log line.
             </p>
             <ul class="project-tags">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>Python</li>
               <li>GitHub Actions</li>
+              <li>Docker</li>
+              <li>Prometheus</li>
+              <li>Grafana</li>
+              <li>Python</li>
+              <li>CodeQL</li>
               <li>Runbooks</li>
             </ul>
             <div class="project-links">
@@ -300,6 +319,12 @@
                 target="_blank"
                 rel="noopener"
                 >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/it-ticketing-system/blob/main/docs/RUNBOOK.md"
+                target="_blank"
+                rel="noopener"
+                >Runbook</a
               >
               <a
                 href="https://github.com/proyneon-hub/it-ticketing-system"
@@ -314,11 +339,12 @@
             <h3>Personal Portfolio</h3>
             <p>
               Static, lightweight site built with semantic HTML, CSS, and
-              JavaScript for fast deployment and simple maintenance.
+              JavaScript, hosted on Vercel with deploys triggered from GitHub.
             </p>
             <p class="project-impact">
-              Shows practical delivery habits: accessibility, performance,
-              simple deployment, and clear documentation.
+              Shows practical delivery habits: Git-based deploys, security
+              headers and cache rules in <code>vercel.json</code>,
+              accessibility, and clear documentation.
             </p>
             <ul class="project-tags">
               <li>HTML</li>
@@ -327,7 +353,10 @@
               <li>SEO</li>
             </ul>
             <div class="project-links">
-              <a href="https://pramitroy.tech" target="_blank" rel="noopener"
+              <a
+                href="https://pramitroy.vercel.app"
+                target="_blank"
+                rel="noopener"
                 >Live Demo</a
               >
               <a
@@ -349,8 +378,8 @@
         <div class="contact-panel">
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">
-            Open to full-time and Fall 2026 co-op DevOps / IT Automation and
-            systems roles.
+            Open to full-time and co-op DevOps / IT Automation and systems
+            roles.
           </h2>
           <p>
             Toronto/GTA preferred. I am interested in teams working on
