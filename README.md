@@ -41,5 +41,6 @@ The PDF cache rule is `max-age=0, must-revalidate`, so a re-exported resume show
    - the three role pages (canonical, `og:url`, `og:image`, Personal Portfolio card)
    - `robots.txt` and `sitemap.xml`
    - the three `assets/resume-*.html` files, then re-export the PDFs
-   - the `proyneon-hub/proyneon-hub` profile README and the "Built by" link in the `it-ticketing-system` README
+   - the `proyneon-hub/proyneon-hub` profile README
+   - the "Built by" link in the `it-ticketing-system` README, which still points at the expired `pramitroy.tech` (left unchanged on purpose so that project's Vercel deployment stays as it was)
 3. Optionally redirect `pramitroy.vercel.app` to the new domain from the Domains settings.
