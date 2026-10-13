@@ -298,7 +298,10 @@
                 Layered TypeScript API with typed React client and versioned,
                 replay-tested game rules
               </li>
-              <li>Projects: IT Ticketing System, Chess Game, Portfolio</li>
+              <li>
+                Projects: IT Ticketing System, Job Application Tracker, Chess
+                Game, Portfolio
+              </li>
             </ul>
             <a
               class="btn primary"
@@ -323,6 +326,10 @@
                 real-stack smoke
               </li>
               <li>22-entry defect log, each with a regression test</li>
+              <li>
+                Row-level security proven with pgTAP; WCAG 2.2 AA scans in
+                light and dark
+              </li>
               <li>Root-cause troubleshooting and reproducible defect thinking</li>
               <li>Deployment/device testing and documentation</li>
             </ul>
@@ -388,6 +395,8 @@
               <li>Python</li>
               <li>Java</li>
               <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>Supabase</li>
               <li>React</li>
               <li>Next.js</li>
               <li>Node.js</li>
@@ -399,6 +408,7 @@
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Tailwind CSS</li>
+              <li>shadcn/ui</li>
             </ul>
           </article>
           <article class="skill-group">
@@ -409,6 +419,7 @@
               <li>Supertest</li>
               <li>Axe Accessibility</li>
               <li>Contract Testing</li>
+              <li>pgTAP Database Testing</li>
               <li>k6 Load Testing</li>
               <li>Debugging</li>
               <li>Root-Cause Troubleshooting</li>
@@ -536,6 +547,71 @@
           </article>
           <article class="project-card">
             <p class="project-number">02</p>
+            <h3>Job Application Tracker</h3>
+            <ul
+              class="project-tags"
+              aria-label="Job Application Tracker role relevance and technologies"
+            >
+              <li>Full-Stack</li>
+              <li>QA Automation</li>
+              <li>TypeScript</li>
+              <li>Next.js 16</li>
+              <li>React 19</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>Playwright</li>
+              <li>pgTAP</li>
+            </ul>
+            <p>
+              A job-search tracker with a kanban board, follow-up reminders, and
+              response-rate stats, where each user's data is kept private by
+              row-level security in the database itself.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                Row-level security on every table, proven by a 27-check pgTAP
+                test in CI: 8 of those checks fail with RLS switched off, so
+                the test really guards it
+              </li>
+              <li>
+                A composite foreign key stops one user linking another user's
+                resume to their application, and status history is written by a
+                database trigger so app code cannot forge it
+              </li>
+              <li>
+                One repository interface with Supabase and in-browser demo
+                implementations, validated by the same Zod schema on the client
+                and in Server Actions
+              </li>
+              <li>
+                Keyboard-accessible drag and drop, with Playwright end-to-end
+                tests and axe-core WCAG 2.2 AA scans in light and dark themes
+              </li>
+              <li>
+                Tests checked by breaking the code they protect first, which
+                exposed a real gap in the keyboard drag test
+              </li>
+            </ul>
+            <div
+              class="project-links"
+              aria-label="Job Application Tracker links"
+            >
+              <a
+                href="https://job-application-tracker-two-beryl.vercel.app"
+                target="_blank"
+                rel="noopener"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/proyneon-hub/Job-Application-Tracker"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-number">03</p>
             <h3>Chess Game</h3>
             <ul
               class="project-tags"
@@ -595,7 +671,7 @@
             </div>
           </article>
           <article class="project-card">
-            <p class="project-number">03</p>
+            <p class="project-number">04</p>
             <h3>Enterprise Network Design</h3>
             <ul
               class="project-tags"
@@ -636,7 +712,7 @@
             </div>
           </article>
           <article class="project-card">
-            <p class="project-number">04</p>
+            <p class="project-number">05</p>
             <h3>Personal Portfolio</h3>
             <ul
               class="project-tags"
@@ -748,6 +824,10 @@
             <li>
               Chess Game: human playtesting of the hidden-politics layer, which
               is so far verified only by simulation
+            </li>
+            <li>
+              Job Application Tracker: email follow-up reminders (needs custom
+              SMTP and a scheduled job) and a nonce-based Content-Security-Policy
             </li>
             <li>
               Registering a custom domain for this portfolio, which currently

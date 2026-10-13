@@ -29,7 +29,7 @@
     <div class="skills">
       <p><strong>Languages:</strong> JavaScript, TypeScript, Python, Java, SQL, C</p>
       <p><strong>Frontend:</strong> React, Next.js, Vite, HTML5, CSS3, Tailwind CSS, Responsive Design, Accessibility</p>
-      <p><strong>Backend &amp; Data:</strong> Node.js, Express, MongoDB, REST APIs, OpenAPI, Zod, API Design, Data Modeling</p>
+      <p><strong>Backend &amp; Data:</strong> Node.js, Express, MongoDB, PostgreSQL, Supabase, REST APIs, OpenAPI, Zod, API Design, Data Modeling</p>
       <p><strong>Tools &amp; Practices:</strong> Git, GitHub Actions, Docker, Vitest, Playwright, Debugging, Code Review, Documentation, Deployment Validation</p>
     </div>
   </section>
@@ -50,6 +50,17 @@
     </article>
     <article class="item">
       <div class="item-heading">
+        <span>Job Application Tracker</span>
+        <span>Next.js, React, TypeScript, Supabase</span>
+      </div>
+      <p class="subheading">Live: <a href="https://job-application-tracker-two-beryl.vercel.app">job-application-tracker-two-beryl.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/Job-Application-Tracker">github.com/proyneon-hub/Job-Application-Tracker</a></p>
+      <ul>
+        <li>Built a job-search tracker on Next.js 16, React 19, and Supabase with a keyboard-accessible kanban board, follow-up reminders, and response-rate stats; one repository interface serves both real and in-browser demo data, validated by shared Zod schemas.</li>
+        <li>Enforced per-user privacy with Postgres row-level security, a composite foreign key, and a status-history trigger, proven by a 27-check pgTAP test in CI.</li>
+      </ul>
+    </article>
+    <article class="item">
+      <div class="item-heading">
         <span>Chess Game</span>
         <span>Next.js, React, TypeScript, MongoDB</span>
       </div>
@@ -57,16 +68,6 @@
       <ul>
         <li>Built a full-stack chess game on Next.js 15 and React 19 with local, computer (Easy, Normal, Advanced), and private online play sharing one deterministic rules engine.</li>
         <li>Ran the computer search in a Web Worker and committed online moves with compare-and-swap versioning and idempotent receipts; versioned the rules so saved games keep their behavior, pinned by seeded replay tests (267 unit and 28 browser tests).</li>
-      </ul>
-    </article>
-    <article class="item">
-      <div class="item-heading">
-        <span>Personal Portfolio</span>
-        <span>HTML, CSS, JavaScript</span>
-      </div>
-      <p class="subheading">Live: <a href="https://pramitroy.vercel.app">pramitroy.vercel.app</a> | GitHub: <a href="https://github.com/proyneon-hub/personal-portfolio">github.com/proyneon-hub/personal-portfolio</a></p>
-      <ul>
-        <li>Built a lightweight, accessible portfolio with semantic HTML, modern CSS, modular JavaScript, and SEO metadata, deployed on Vercel from GitHub with security headers.</li>
       </ul>
     </article>
   </section>
